@@ -295,13 +295,17 @@ building_barracks_requirement_terrain = {
 }
 
 building_camel_farms_requirement_terrain = {
-	geographical_region = world_innovation_camels # new
 	OR = {
 		terrain = desert
 		terrain = desert_mountains
 		terrain = oasis
-		terrain = floodplains
-		terrain = drylands # new
+		AND = {
+			OR = {
+				terrain = floodplains
+				terrain = drylands
+			}
+			geographical_region = world_innovation_camels
+		}
 	}
 }
 
