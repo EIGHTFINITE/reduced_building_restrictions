@@ -490,7 +490,10 @@ barony_cannot_construct_holding = {
 			terrain = desert
 			terrain = desert_mountains
 		}
-		geographical_region = world_africa_sahara
+		AND = {
+			geographical_region = world_africa_sahara
+			NOT = { culture = { has_cultural_tradition = tradition_saharan_nomads } }
+		}
 	}
 }
 
