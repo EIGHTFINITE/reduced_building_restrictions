@@ -399,6 +399,32 @@ building_wind_furnace_requirement_terrain = {
 	geographical_region = world_india
 	OR = {
 		is_coastal = yes
+		is_riverside_province = yes
+		AND = {
+			NOR = {
+				terrain = mountains
+				terrain = desert_mountains
+				terrain = forest
+				terrain = taiga
+				terrain = jungle
+				terrain = hills
+				terrain = terraced_hills
+			}
+			county ?= {
+				any_county_province = {
+					is_coastal = yes
+					NOR = {
+						terrain = mountains
+						terrain = desert_mountains
+						terrain = forest
+						terrain = taiga
+						terrain = jungle
+						terrain = hills
+						terrain = terraced_hills
+					}
+				}
+			}
+		}
 		AND = {
 			scope:holder.top_liege = {
 				any_realm_county = {
