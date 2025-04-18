@@ -321,6 +321,7 @@ building_wind_furnace_requirement_terrain = {
 	geographical_region = world_india
 	OR = {
 		is_coastal = yes
+		is_riverside_province = yes
 		AND = {
 			scope:holder.top_liege = {
 				any_realm_county = {
