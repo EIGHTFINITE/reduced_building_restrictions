@@ -6,5 +6,5 @@ tags={
 	"Balance"
 }
 name="Reduced Building Restrictions"
-supported_version="1.15.*"
+supported_version="1.*.*"
 path="mod/reduced_building_restrictions"
