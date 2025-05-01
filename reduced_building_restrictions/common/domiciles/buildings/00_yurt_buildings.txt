@@ -1307,7 +1307,16 @@ fishing_yurt_01 = {
 	can_construct = {
 		custom_tooltip = {
 			text = nomad_unlocked_fishing_yurt_flag_desc
-			has_character_flag = nomad_unlocked_fishing_yurt_flag	
+			OR = {
+				has_character_flag = nomad_unlocked_fishing_yurt_flag
+				root.domicile.domicile_location.county ?= {
+					OR = {
+						is_riverside_county = yes
+						is_lakeside_county = yes
+						is_coastal_county = yes
+					}
+				}
+			}
 		}
 	}
 
@@ -1363,7 +1372,16 @@ fishing_yurt_02 = {
 	can_construct = {
 		custom_tooltip = {
 			text = nomad_unlocked_fishing_yurt_flag_desc
-			has_character_flag = nomad_unlocked_fishing_yurt_flag	
+			OR = {
+				has_character_flag = nomad_unlocked_fishing_yurt_flag
+				root.domicile.domicile_location.county ?= {
+					OR = {
+						is_riverside_county = yes
+						is_lakeside_county = yes
+						is_coastal_county = yes
+					}
+				}
+			}
 		}
 	}
 
@@ -1419,7 +1437,16 @@ fishing_yurt_03 = {
 	can_construct = {
 		custom_tooltip = {
 			text = nomad_unlocked_fishing_yurt_flag_desc
-			has_character_flag = nomad_unlocked_fishing_yurt_flag	
+			OR = {
+				has_character_flag = nomad_unlocked_fishing_yurt_flag
+				root.domicile.domicile_location.county ?= {
+					OR = {
+						is_riverside_county = yes
+						is_lakeside_county = yes
+						is_coastal_county = yes
+					}
+				}
+			}
 		}
 	}
 
@@ -1483,7 +1510,16 @@ fishing_yurt_04 = {
 	can_construct = {
 		custom_tooltip = {
 			text = nomad_unlocked_fishing_yurt_flag_desc
-			has_character_flag = nomad_unlocked_fishing_yurt_flag	
+			OR = {
+				has_character_flag = nomad_unlocked_fishing_yurt_flag
+				root.domicile.domicile_location.county ?= {
+					OR = {
+						is_riverside_county = yes
+						is_lakeside_county = yes
+						is_coastal_county = yes
+					}
+				}
+			}
 		}
 	}
 
@@ -1547,7 +1583,16 @@ fishing_yurt_05 = {
 	can_construct = {
 		custom_tooltip = {
 			text = nomad_unlocked_fishing_yurt_flag_desc
-			has_character_flag = nomad_unlocked_fishing_yurt_flag	
+			OR = {
+				has_character_flag = nomad_unlocked_fishing_yurt_flag
+				root.domicile.domicile_location.county ?= {
+					OR = {
+						is_riverside_county = yes
+						is_lakeside_county = yes
+						is_coastal_county = yes
+					}
+				}
+			}
 		}
 	}
 
@@ -1611,7 +1656,16 @@ fishing_yurt_06 = {
 	can_construct = {
 		custom_tooltip = {
 			text = nomad_unlocked_fishing_yurt_flag_desc
-			has_character_flag = nomad_unlocked_fishing_yurt_flag	
+			OR = {
+				has_character_flag = nomad_unlocked_fishing_yurt_flag
+				root.domicile.domicile_location.county ?= {
+					OR = {
+						is_riverside_county = yes
+						is_lakeside_county = yes
+						is_coastal_county = yes
+					}
+				}
+			}
 		}
 	}
 
