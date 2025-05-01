@@ -10959,7 +10959,10 @@ language_yurt_01 = {
 	can_construct = {
 		custom_tooltip = {
 			text = language_yurt_2_unlock
-			num_of_known_languages >= 2
+			OR = {
+				is_ai = no
+				num_of_known_languages >= 2
+			}
 		}		
 	}
 
@@ -10995,13 +10998,6 @@ language_yurt_02 = {
 	slot_type = internal
 	previous_building = language_yurt_01
 
-	can_construct = {
-		custom_tooltip = {
-			text = language_yurt_2_unlock
-			num_of_known_languages >= 2
-		}		
-	}
-
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_2
 		prestige = yurt_internal_building_prestige_cost_tier_2
@@ -11035,13 +11031,6 @@ language_yurt_03 = {
 	allowed_domicile_types = { yurt }
 	slot_type = internal
 	previous_building = language_yurt_02
-
-	can_construct = {
-		custom_tooltip = {
-			text = language_yurt_3_unlock
-			num_of_known_languages >= 3
-		}		
-	}
 
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_3
@@ -11077,13 +11066,6 @@ language_yurt_04 = {
 	slot_type = internal
 	previous_building = language_yurt_03
 
-	can_construct = {
-		custom_tooltip = {
-			text = language_yurt_3_unlock
-			num_of_known_languages >= 3
-		}		
-	}
-
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_4
 		prestige = yurt_internal_building_prestige_cost_tier_4
@@ -11113,13 +11095,6 @@ language_yurt_05 = {
 	allowed_domicile_types = { yurt }
 	slot_type = internal
 	previous_building = language_yurt_04
-
-	can_construct = {
-		custom_tooltip = {
-			text = language_yurt_3_unlock
-			num_of_known_languages >= 3
-		}		
-	}
 
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_5
@@ -11151,13 +11126,6 @@ language_yurt_06 = {
 	allowed_domicile_types = { yurt }
 	slot_type = internal
 	previous_building = language_yurt_05
-
-	can_construct = {
-		custom_tooltip = {
-			text = language_yurt_3_unlock
-			num_of_known_languages >= 3
-		}		
-	}
 
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_6
@@ -11815,10 +11783,13 @@ trade_yurt_01 = {
 	can_construct = {
 		custom_tooltip = {
 			text = trade_yurt_unlock_req
-			any_neighboring_top_liege_realm_owner = {
-				NOT = {
-					government_has_flag = government_is_herder
-					government_has_flag = government_is_nomadic
+			OR = {
+				is_ai = no
+				any_neighboring_top_liege_realm_owner = {
+					NOT = {
+						government_has_flag = government_is_herder
+						government_has_flag = government_is_nomadic
+					}
 				}
 			}
 		}	
@@ -11860,18 +11831,6 @@ trade_yurt_02 = {
 	previous_building = trade_yurt_01
 	internal_slots = 1
 
-	can_construct = {
-		custom_tooltip = {
-			text = trade_yurt_unlock_req
-			any_neighboring_top_liege_realm_owner = {
-				NOT = {
-					government_has_flag = government_is_herder
-					government_has_flag = government_is_nomadic
-				}
-			}
-		}	
-	}
-
 	cost = {
 		herd = yurt_external_building_herd_cost_tier_2
 		prestige = yurt_external_building_prestige_cost_tier_2
@@ -11910,18 +11869,6 @@ trade_yurt_03 = {
 	previous_building = trade_yurt_02
 	internal_slots = 2
 
-	can_construct = {
-		custom_tooltip = {
-			text = trade_yurt_unlock_req
-			any_neighboring_top_liege_realm_owner = {
-				NOT = {
-					government_has_flag = government_is_herder
-					government_has_flag = government_is_nomadic
-				}
-			}
-		}	
-	}
-
 	cost = {
 		herd = yurt_external_building_herd_cost_tier_3
 		prestige = yurt_external_building_prestige_cost_tier_3
@@ -11959,18 +11906,6 @@ trade_yurt_04 = {
 	allowed_domicile_types = { yurt }
 	previous_building = trade_yurt_03
 	internal_slots = 3
-
-	can_construct = {
-		custom_tooltip = {
-			text = trade_yurt_unlock_req
-			any_neighboring_top_liege_realm_owner = {
-				NOT = {
-					government_has_flag = government_is_herder
-					government_has_flag = government_is_nomadic
-				}
-			}
-		}	
-	}
 
 	cost = {
 		herd = yurt_external_building_herd_cost_tier_4
@@ -12015,18 +11950,6 @@ trade_yurt_05 = {
 	previous_building = trade_yurt_04
 	internal_slots = 4
 
-	can_construct = {
-		custom_tooltip = {
-			text = trade_yurt_unlock_req
-			any_neighboring_top_liege_realm_owner = {
-				NOT = {
-					government_has_flag = government_is_herder
-					government_has_flag = government_is_nomadic
-				}
-			}
-		}	
-	}
-
 	cost = {
 		herd = yurt_external_building_herd_cost_tier_5
 		prestige = yurt_external_building_prestige_cost_tier_5
@@ -12065,18 +11988,6 @@ trade_yurt_06 = {
 	allowed_domicile_types = { yurt }
 	previous_building = trade_yurt_05
 	internal_slots = 5
-
-	can_construct = {
-		custom_tooltip = {
-			text = trade_yurt_unlock_req
-			any_neighboring_top_liege_realm_owner = {
-				NOT = {
-					government_has_flag = government_is_herder
-					government_has_flag = government_is_nomadic
-				}
-			}
-		}	
-	}
 
 	cost = {
 		herd = yurt_external_building_herd_cost_tier_6
@@ -13590,8 +13501,11 @@ metalworkers_cultrad_yurt_01 = {
 	can_construct = {
 		custom_tooltip = {
 			text = metalworkers_cultrad_yurt_01_unlock
-			culture ?= {
-				has_cultural_parameter = metalworkers_internal_yurt_unlock
+			OR = {
+				is_ai = no
+				culture ?= {
+					has_cultural_parameter = metalworkers_internal_yurt_unlock
+				}
 			}
 		}		
 	}
@@ -13627,15 +13541,6 @@ metalworkers_cultrad_yurt_02 = {
 	slot_type = internal
 	previous_building = metalworkers_cultrad_yurt_01
 
-	can_construct = {
-		custom_tooltip = {
-			text = metalworkers_cultrad_yurt_01_unlock
-			culture ?= {
-				has_cultural_parameter = metalworkers_internal_yurt_unlock
-			}
-		}		
-	}
-
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_2
 		prestige = yurt_internal_building_prestige_cost_tier_2
@@ -13666,15 +13571,6 @@ metalworkers_cultrad_yurt_03 = {
 	allowed_domicile_types = { yurt }
 	slot_type = internal
 	previous_building = metalworkers_cultrad_yurt_02
-
-	can_construct = {
-		custom_tooltip = {
-			text = metalworkers_cultrad_yurt_01_unlock
-			culture ?= {
-				has_cultural_parameter = metalworkers_internal_yurt_unlock
-			}
-		}		
-	}
 
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_3
@@ -13707,15 +13603,6 @@ metalworkers_cultrad_yurt_04 = {
 	slot_type = internal
 	previous_building = metalworkers_cultrad_yurt_03
 
-	can_construct = {
-		custom_tooltip = {
-			text = metalworkers_cultrad_yurt_01_unlock
-			culture ?= {
-				has_cultural_parameter = metalworkers_internal_yurt_unlock
-			}
-		}		
-	}
-
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_4
 		prestige = yurt_internal_building_prestige_cost_tier_4
@@ -13747,15 +13634,6 @@ metalworkers_cultrad_yurt_05 = {
 	slot_type = internal
 	previous_building = metalworkers_cultrad_yurt_04
 
-	can_construct = {
-		custom_tooltip = {
-			text = metalworkers_cultrad_yurt_01_unlock
-			culture ?= {
-				has_cultural_parameter = metalworkers_internal_yurt_unlock
-			}
-		}		
-	}
-
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_5
 		prestige = yurt_internal_building_prestige_cost_tier_5
@@ -13784,15 +13662,6 @@ metalworkers_cultrad_yurt_06 = {
 	allowed_domicile_types = { yurt }
 	slot_type = internal
 	previous_building = metalworkers_cultrad_yurt_05
-
-	can_construct = {
-		custom_tooltip = {
-			text = metalworkers_cultrad_yurt_01_unlock
-			culture ?= {
-				has_cultural_parameter = metalworkers_internal_yurt_unlock
-			}
-		}		
-	}
 
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_6
@@ -13830,6 +13699,7 @@ sorcerous_metallurgy_yurt_01 = {
 		custom_tooltip = {
 			text = sorcerous_metallurgy_yurt_01_domicile_building_desc
 			OR = {
+				is_ai = no
 				has_trait = witch
 				has_trait = lifestyle_mystic
 				has_trait = lifestyle_herbalist
@@ -13866,17 +13736,6 @@ sorcerous_metallurgy_yurt_02 = {
 	slot_type = internal
 	previous_building = sorcerous_metallurgy_yurt_01
 
-	can_construct = {
-		custom_tooltip = {
-			text = sorcerous_metallurgy_yurt_01_domicile_building_desc
-			OR = {
-				has_trait = witch
-				has_trait = lifestyle_mystic
-				has_trait = lifestyle_herbalist
-			}
-		}
-	}
-
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_2
 		prestige = yurt_internal_building_prestige_cost_tier_2
@@ -13905,17 +13764,6 @@ sorcerous_metallurgy_yurt_03 = {
 	allowed_domicile_types = { yurt }
 	slot_type = internal
 	previous_building = sorcerous_metallurgy_yurt_02
-
-	can_construct = {
-		custom_tooltip = {
-			text = sorcerous_metallurgy_yurt_01_domicile_building_desc
-			OR = {
-				has_trait = witch
-				has_trait = lifestyle_mystic
-				has_trait = lifestyle_herbalist
-			}
-		}
-	}
 
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_3
@@ -13947,17 +13795,6 @@ sorcerous_metallurgy_yurt_04 = {
 	slot_type = internal
 	previous_building = sorcerous_metallurgy_yurt_03
 
-	can_construct = {
-		custom_tooltip = {
-			text = sorcerous_metallurgy_yurt_01_domicile_building_desc
-			OR = {
-				has_trait = witch
-				has_trait = lifestyle_mystic
-				has_trait = lifestyle_herbalist
-			}
-		}
-	}
-
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_4
 		prestige = yurt_internal_building_prestige_cost_tier_4
@@ -13986,17 +13823,6 @@ sorcerous_metallurgy_yurt_05 = {
 	allowed_domicile_types = { yurt }
 	slot_type = internal
 	previous_building = sorcerous_metallurgy_yurt_04
-
-	can_construct = {
-		custom_tooltip = {
-			text = sorcerous_metallurgy_yurt_01_domicile_building_desc
-			OR = {
-				has_trait = witch
-				has_trait = lifestyle_mystic
-				has_trait = lifestyle_herbalist
-			}
-		}
-	}
 
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_5
@@ -14027,17 +13853,6 @@ sorcerous_metallurgy_yurt_06 = {
 	allowed_domicile_types = { yurt }
 	slot_type = internal
 	previous_building = sorcerous_metallurgy_yurt_05
-
-	can_construct = {
-		custom_tooltip = {
-			text = sorcerous_metallurgy_yurt_01_domicile_building_desc
-			OR = {
-				has_trait = witch
-				has_trait = lifestyle_mystic
-				has_trait = lifestyle_herbalist
-			}
-		}
-	}
 
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_6
@@ -14075,8 +13890,11 @@ zealous_people_yurt_01 = {
 	can_construct = {
 		custom_tooltip = {
 			text = zealous_people_yurt_01_domicile_building_desc
-			culture ?= {
-				has_cultural_parameter = zealous_people_internal_yurt_unlock
+			OR = {
+				is_ai = no
+				culture ?= {
+					has_cultural_parameter = zealous_people_internal_yurt_unlock
+				}
 			}
 		}	
 	}
@@ -14110,15 +13928,6 @@ zealous_people_yurt_02 = {
 	slot_type = internal
 	previous_building = zealous_people_yurt_01
 
-	can_construct = {
-		custom_tooltip = {
-			text = zealous_people_yurt_01_domicile_building_desc
-			culture ?= {
-				has_cultural_parameter = zealous_people_internal_yurt_unlock
-			}
-		}	
-	}
-
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_2
 		prestige = yurt_internal_building_prestige_cost_tier_2
@@ -14148,15 +13957,6 @@ zealous_people_yurt_03 = {
 	allowed_domicile_types = { yurt }
 	slot_type = internal
 	previous_building = zealous_people_yurt_02
-
-	can_construct = {
-		custom_tooltip = {
-			text = zealous_people_yurt_01_domicile_building_desc
-			culture ?= {
-				has_cultural_parameter = zealous_people_internal_yurt_unlock
-			}
-		}	
-	}
 
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_3
@@ -14188,15 +13988,6 @@ zealous_people_yurt_04 = {
 	slot_type = internal
 	previous_building = zealous_people_yurt_03
 
-	can_construct = {
-		custom_tooltip = {
-			text = zealous_people_yurt_01_domicile_building_desc
-			culture ?= {
-				has_cultural_parameter = zealous_people_internal_yurt_unlock
-			}
-		}	
-	}
-
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_4
 		prestige = yurt_internal_building_prestige_cost_tier_4
@@ -14227,15 +14018,6 @@ zealous_people_yurt_05 = {
 	slot_type = internal
 	previous_building = zealous_people_yurt_04
 
-	can_construct = {
-		custom_tooltip = {
-			text = zealous_people_yurt_01_domicile_building_desc
-			culture ?= {
-				has_cultural_parameter = zealous_people_internal_yurt_unlock
-			}
-		}	
-	}
-
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_5
 		prestige = yurt_internal_building_prestige_cost_tier_5
@@ -14265,15 +14047,6 @@ zealous_people_yurt_06 = {
 	allowed_domicile_types = { yurt }
 	slot_type = internal
 	previous_building = zealous_people_yurt_05
-
-	can_construct = {
-		custom_tooltip = {
-			text = zealous_people_yurt_01_domicile_building_desc
-			culture ?= {
-				has_cultural_parameter = zealous_people_internal_yurt_unlock
-			}
-		}	
-	}
 
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_6
@@ -14311,8 +14084,11 @@ loyal_soldiers_yurt_01 = {
 	can_construct = {
 		custom_tooltip = {
 			text = loyal_soldiers_yurt_01_domicile_building_desc
-			any_relation = {
-				type = blood_brother
+			OR = {
+				is_ai = no
+				any_relation = {
+					type = blood_brother
+				}
 			}
 		}		
 	}
@@ -14349,15 +14125,6 @@ loyal_soldiers_yurt_02 = {
 	slot_type = internal
 	previous_building = loyal_soldiers_yurt_01
 
-	can_construct = {
-		custom_tooltip = {
-			text = loyal_soldiers_yurt_01_domicile_building_desc
-			any_relation = {
-				type = blood_brother
-			}
-		}		
-	}
-
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_2
 		prestige = yurt_internal_building_prestige_cost_tier_2
@@ -14390,15 +14157,6 @@ loyal_soldiers_yurt_03 = {
 	allowed_domicile_types = { yurt }
 	slot_type = internal
 	previous_building = loyal_soldiers_yurt_02
-
-	can_construct = {
-		custom_tooltip = {
-			text = loyal_soldiers_yurt_01_domicile_building_desc
-			any_relation = {
-				type = blood_brother
-			}
-		}		
-	}
 
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_3
@@ -14433,15 +14191,6 @@ loyal_soldiers_yurt_04 = {
 	slot_type = internal
 	previous_building = loyal_soldiers_yurt_03
 
-	can_construct = {
-		custom_tooltip = {
-			text = loyal_soldiers_yurt_01_domicile_building_desc
-			any_relation = {
-				type = blood_brother
-			}
-		}		
-	}
-
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_4
 		prestige = yurt_internal_building_prestige_cost_tier_4
@@ -14475,15 +14224,6 @@ loyal_soldiers_yurt_05 = {
 	slot_type = internal
 	previous_building = loyal_soldiers_yurt_04
 
-	can_construct = {
-		custom_tooltip = {
-			text = loyal_soldiers_yurt_01_domicile_building_desc
-			any_relation = {
-				type = blood_brother
-			}
-		}		
-	}
-
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_5
 		prestige = yurt_internal_building_prestige_cost_tier_5
@@ -14516,15 +14256,6 @@ loyal_soldiers_yurt_06 = {
 	allowed_domicile_types = { yurt }
 	slot_type = internal
 	previous_building = loyal_soldiers_yurt_05
-
-	can_construct = {
-		custom_tooltip = {
-			text = loyal_soldiers_yurt_01_domicile_building_desc
-			any_relation = {
-				type = blood_brother
-			}
-		}		
-	}
 
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_6
@@ -14564,6 +14295,7 @@ forbearing_yurt_01 = {
 		custom_tooltip = {
 			text = forbearing_yurt_01_domicile_building_desc
 			OR = {
+				is_ai = no
 				culture ?= {
 					has_cultural_parameter = forbearing_internal_yurt_unlock
 				}
@@ -14604,21 +14336,6 @@ forbearing_yurt_02 = {
 	slot_type = internal
 	previous_building = forbearing_yurt_01
 
-	can_construct = {
-		custom_tooltip = {
-			text = forbearing_yurt_01_domicile_building_desc
-			OR = {
-				culture ?= {
-					has_cultural_parameter = forbearing_internal_yurt_unlock
-				}
-				any_courtier = {
-					count >= 5
-					has_trait = patient
-				}
-			}
-		}
-	}
-
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_2
 		prestige = yurt_internal_building_prestige_cost_tier_2
@@ -14648,21 +14365,6 @@ forbearing_yurt_03 = {
 	allowed_domicile_types = { yurt }
 	slot_type = internal
 	previous_building = forbearing_yurt_02
-
-	can_construct = {
-		custom_tooltip = {
-			text = forbearing_yurt_01_domicile_building_desc
-			OR = {
-				culture ?= {
-					has_cultural_parameter = forbearing_internal_yurt_unlock
-				}
-				any_courtier = {
-					count >= 5
-					has_trait = patient
-				}
-			}
-		}
-	}
 
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_3
@@ -14694,21 +14396,6 @@ forbearing_yurt_04 = {
 	slot_type = internal
 	previous_building = forbearing_yurt_03
 
-	can_construct = {
-		custom_tooltip = {
-			text = forbearing_yurt_01_domicile_building_desc
-			OR = {
-				culture ?= {
-					has_cultural_parameter = forbearing_internal_yurt_unlock
-				}
-				any_courtier = {
-					count >= 5
-					has_trait = patient
-				}
-			}
-		}
-	}
-
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_4
 		prestige = yurt_internal_building_prestige_cost_tier_4
@@ -14739,21 +14426,6 @@ forbearing_yurt_05 = {
 	slot_type = internal
 	previous_building = forbearing_yurt_04
 
-	can_construct = {
-		custom_tooltip = {
-			text = forbearing_yurt_01_domicile_building_desc
-			OR = {
-				culture ?= {
-					has_cultural_parameter = forbearing_internal_yurt_unlock
-				}
-				any_courtier = {
-					count >= 5
-					has_trait = patient
-				}
-			}
-		}
-	}
-
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_5
 		prestige = yurt_internal_building_prestige_cost_tier_5
@@ -14782,21 +14454,6 @@ forbearing_yurt_06 = {
 	allowed_domicile_types = { yurt }
 	slot_type = internal
 	previous_building = forbearing_yurt_05
-
-	can_construct = {
-		custom_tooltip = {
-			text = forbearing_yurt_01_domicile_building_desc
-			OR = {
-				culture ?= {
-					has_cultural_parameter = forbearing_internal_yurt_unlock
-				}
-				any_courtier = {
-					count >= 5
-					has_trait = patient
-				}
-			}
-		}
-	}
 
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_6
@@ -14832,8 +14489,11 @@ stalwart_defenders_yurt_01 = {
 	can_construct = {
 		custom_tooltip = {
 			text = stalwart_defenders_yurt_01_domicile_building_desc
-			culture ?= {
-				has_cultural_parameter = stalwart_defenders_internal_yurt_unlock
+			OR = {
+				is_ai = no
+				culture ?= {
+					has_cultural_parameter = stalwart_defenders_internal_yurt_unlock
+				}
 			}
 		}	
 	}
@@ -14867,15 +14527,6 @@ stalwart_defenders_yurt_02 = {
 	slot_type = internal
 	previous_building = stalwart_defenders_yurt_01
 
-	can_construct = {
-		custom_tooltip = {
-			text = stalwart_defenders_yurt_01_domicile_building_desc
-			culture ?= {
-				has_cultural_parameter = stalwart_defenders_internal_yurt_unlock
-			}
-		}	
-	}
-
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_2
 		prestige = yurt_internal_building_prestige_cost_tier_2
@@ -14905,15 +14556,6 @@ stalwart_defenders_yurt_03 = {
 	allowed_domicile_types = { yurt }
 	slot_type = internal
 	previous_building = stalwart_defenders_yurt_02
-
-	can_construct = {
-		custom_tooltip = {
-			text = stalwart_defenders_yurt_01_domicile_building_desc
-			culture ?= {
-				has_cultural_parameter = stalwart_defenders_internal_yurt_unlock
-			}
-		}	
-	}
 
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_3
@@ -14945,15 +14587,6 @@ stalwart_defenders_yurt_04 = {
 	slot_type = internal
 	previous_building = stalwart_defenders_yurt_03
 
-	can_construct = {
-		custom_tooltip = {
-			text = stalwart_defenders_yurt_01_domicile_building_desc
-			culture ?= {
-				has_cultural_parameter = stalwart_defenders_internal_yurt_unlock
-			}
-		}	
-	}
-
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_4
 		prestige = yurt_internal_building_prestige_cost_tier_4
@@ -14984,15 +14617,6 @@ stalwart_defenders_yurt_05 = {
 	slot_type = internal
 	previous_building = stalwart_defenders_yurt_04
 
-	can_construct = {
-		custom_tooltip = {
-			text = stalwart_defenders_yurt_01_domicile_building_desc
-			culture ?= {
-				has_cultural_parameter = stalwart_defenders_internal_yurt_unlock
-			}
-		}	
-	}
-
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_5
 		prestige = yurt_internal_building_prestige_cost_tier_5
@@ -15022,15 +14646,6 @@ stalwart_defenders_yurt_06 = {
 	allowed_domicile_types = { yurt }
 	slot_type = internal
 	previous_building = stalwart_defenders_yurt_05
-
-	can_construct = {
-		custom_tooltip = {
-			text = stalwart_defenders_yurt_01_domicile_building_desc
-			culture ?= {
-				has_cultural_parameter = stalwart_defenders_internal_yurt_unlock
-			}
-		}	
-	}
 
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_6
@@ -15066,7 +14681,10 @@ legalistic_yurt_01 = {
 	can_construct = {
 		custom_tooltip = {
 			text = legalistic_yurt_01_unlock
-			highest_held_title_tier >= tier_empire
+			OR = {
+				is_ai = no
+				highest_held_title_tier >= tier_empire
+			}
 		}	
 	}
 
@@ -15098,13 +14716,6 @@ legalistic_yurt_02 = {
 	allowed_domicile_types = { yurt }
 	slot_type = internal
 	previous_building = legalistic_yurt_01
-
-	can_construct = {
-		custom_tooltip = {
-			text = legalistic_yurt_01_unlock
-			highest_held_title_tier >= tier_empire
-		}	
-	}
 
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_2
@@ -15138,13 +14749,6 @@ legalistic_yurt_03 = {
 	slot_type = internal
 	previous_building = legalistic_yurt_02
 
-	can_construct = {
-		custom_tooltip = {
-			text = legalistic_yurt_01_unlock
-			highest_held_title_tier >= tier_empire
-		}	
-	}
-
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_3
 		prestige = yurt_internal_building_prestige_cost_tier_3
@@ -15175,13 +14779,6 @@ legalistic_yurt_04 = {
 	allowed_domicile_types = { yurt }
 	slot_type = internal
 	previous_building = legalistic_yurt_03
-
-	can_construct = {
-		custom_tooltip = {
-			text = legalistic_yurt_01_unlock
-			highest_held_title_tier >= tier_empire
-		}	
-	}
 
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_4
@@ -15214,13 +14811,6 @@ legalistic_yurt_05 = {
 	slot_type = internal
 	previous_building = legalistic_yurt_04
 
-	can_construct = {
-		custom_tooltip = {
-			text = legalistic_yurt_01_unlock
-			highest_held_title_tier >= tier_empire
-		}	
-	}
-
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_5
 		prestige = yurt_internal_building_prestige_cost_tier_5
@@ -15251,13 +14841,6 @@ legalistic_yurt_06 = {
 	allowed_domicile_types = { yurt }
 	slot_type = internal
 	previous_building = legalistic_yurt_05
-
-	can_construct = {
-		custom_tooltip = {
-			text = legalistic_yurt_01_unlock
-			highest_held_title_tier >= tier_empire
-		}	
-	}
 
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_6
@@ -15302,8 +14885,11 @@ horse_breeder_yurt_01 = {
 	can_construct = {
 		custom_tooltip = {
 			text = horse_breeder_yurt_01_unlock
-			culture ?= {
-				has_cultural_parameter = horse_breeder_internal_yurt_unlock
+			OR = {
+				is_ai = no
+				culture ?= {
+					has_cultural_parameter = horse_breeder_internal_yurt_unlock
+				}
 			}
 		}	
 	}
@@ -15332,15 +14918,6 @@ horse_breeder_yurt_02 = {
 	allowed_domicile_types = { yurt }
 	slot_type = internal
 	previous_building = horse_breeder_yurt_01
-
-	can_construct = {
-		custom_tooltip = {
-			text = horse_breeder_yurt_01_unlock
-			culture ?= {
-				has_cultural_parameter = horse_breeder_internal_yurt_unlock
-			}
-		}	
-	}
 
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_2
@@ -15374,15 +14951,6 @@ horse_breeder_yurt_03 = {
 	slot_type = internal
 	previous_building = horse_breeder_yurt_02
 
-	can_construct = {
-		custom_tooltip = {
-			text = horse_breeder_yurt_01_unlock
-			culture ?= {
-				has_cultural_parameter = horse_breeder_internal_yurt_unlock
-			}
-		}	
-	}
-
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_3
 		prestige = yurt_internal_building_prestige_cost_tier_3
@@ -15414,15 +14982,6 @@ horse_breeder_yurt_04 = {
 	allowed_domicile_types = { yurt }
 	slot_type = internal
 	previous_building = horse_breeder_yurt_03
-
-	can_construct = {
-		custom_tooltip = {
-			text = horse_breeder_yurt_01_unlock
-			culture ?= {
-				has_cultural_parameter = horse_breeder_internal_yurt_unlock
-			}
-		}	
-	}
 
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_4
@@ -15456,15 +15015,6 @@ horse_breeder_yurt_05 = {
 	slot_type = internal
 	previous_building = horse_breeder_yurt_04
 
-	can_construct = {
-		custom_tooltip = {
-			text = horse_breeder_yurt_01_unlock
-			culture ?= {
-				has_cultural_parameter = horse_breeder_internal_yurt_unlock
-			}
-		}	
-	}
-
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_5
 		prestige = yurt_internal_building_prestige_cost_tier_5
@@ -15496,15 +15046,6 @@ horse_breeder_yurt_06 = {
 	allowed_domicile_types = { yurt }
 	slot_type = internal
 	previous_building = horse_breeder_yurt_05
-
-	can_construct = {
-		custom_tooltip = {
-			text = horse_breeder_yurt_01_unlock
-			culture ?= {
-				has_cultural_parameter = horse_breeder_internal_yurt_unlock
-			}
-		}	
-	}
 
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_6
@@ -15546,7 +15087,10 @@ paiza_metal_trade_yurt_01 = {
 	can_construct = {
 		custom_tooltip = {
 			text = paiza_metal_trade_yurt_flag_desc
-			has_character_flag = paiza_metal_trade_yurt_flag
+			OR = {
+				is_ai = no
+				has_character_flag = paiza_metal_trade_yurt_flag
+			}
 		}
 	}
 
@@ -15578,13 +15122,6 @@ paiza_metal_trade_yurt_02 = {
 	allowed_domicile_types = { yurt }
 	slot_type = internal
 	previous_building = paiza_metal_trade_yurt_01
-
-	can_construct = {
-		custom_tooltip = {
-			text = paiza_metal_trade_yurt_flag_desc
-			has_character_flag = paiza_metal_trade_yurt_flag
-		}
-	}
 
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_2
@@ -15621,13 +15158,6 @@ paiza_metal_trade_yurt_03 = {
 	slot_type = internal
 	previous_building = paiza_metal_trade_yurt_02
 
-	can_construct = {
-		custom_tooltip = {
-			text = paiza_metal_trade_yurt_flag_desc
-			has_character_flag = paiza_metal_trade_yurt_flag
-		}
-	}
-
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_3
 		prestige = yurt_internal_building_prestige_cost_tier_3
@@ -15662,13 +15192,6 @@ paiza_metal_trade_yurt_04 = {
 	allowed_domicile_types = { yurt }
 	slot_type = internal
 	previous_building = paiza_metal_trade_yurt_03
-
-	can_construct = {
-		custom_tooltip = {
-			text = paiza_metal_trade_yurt_flag_desc
-			has_character_flag = paiza_metal_trade_yurt_flag
-		}
-	}
 
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_4
@@ -15705,13 +15228,6 @@ paiza_metal_trade_yurt_05 = {
 	slot_type = internal
 	previous_building = paiza_metal_trade_yurt_04
 
-	can_construct = {
-		custom_tooltip = {
-			text = paiza_metal_trade_yurt_flag_desc
-			has_character_flag = paiza_metal_trade_yurt_flag
-		}
-	}
-
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_5
 		prestige = yurt_internal_building_prestige_cost_tier_5
@@ -15746,13 +15262,6 @@ paiza_metal_trade_yurt_06 = {
 	allowed_domicile_types = { yurt }
 	slot_type = internal
 	previous_building = paiza_metal_trade_yurt_05
-
-	can_construct = {
-		custom_tooltip = {
-			text = paiza_metal_trade_yurt_flag_desc
-			has_character_flag = paiza_metal_trade_yurt_flag
-		}
-	}
 
 	cost = {
 		herd = yurt_internal_building_herd_cost_tier_6
