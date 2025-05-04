@@ -4,7 +4,10 @@
 
 building_requirement_tribal = {
 	scope:holder ?= {
-		government_has_flag = government_is_tribal
+		OR = {
+			government_has_flag = government_is_tribal
+			government_has_flag = government_is_nomadic
+		}
 	}
 }
 
@@ -13,6 +16,38 @@ building_requirement_tribal_holding_in_county = {
 		county = {
 			any_county_province = {
 				has_holding_type = tribal_holding
+			}
+		}
+	}
+}
+
+building_requirement_nomad = {
+	scope:holder ?= {
+		government_has_flag = government_is_nomadic
+	}
+}
+
+building_requirement_nomad_holding_in_county = {
+	NOT = {
+		county = {
+			any_county_province = {
+				has_holding_type = nomad_holding
+			}
+		}
+	}
+}
+
+building_requirement_herder = {
+	scope:holder ?= {
+		government_has_flag = government_is_herder
+	}
+}
+
+building_requirement_herder_holding_in_county = {
+	NOT = {
+		county = {
+			any_county_province = {
+				has_holding_type = herder_holding
 			}
 		}
 	}
@@ -220,17 +255,13 @@ building_barracks_requirement_terrain = {
 }
 
 building_camel_farms_requirement_terrain = {
+	geographical_region = world_innovation_camels # new
 	OR = {
 		terrain = desert
 		terrain = desert_mountains
 		terrain = oasis
-		AND = {
-			OR = {
-				terrain = floodplains
-				terrain = drylands
-			}
-			geographical_region = world_innovation_camels
-		}
+		terrain = floodplains
+		terrain = drylands # new
 	}
 }
 
@@ -321,30 +352,6 @@ building_wind_furnace_requirement_terrain = {
 	geographical_region = world_india
 	OR = {
 		is_coastal = yes
-		is_riverside_province = yes
-		AND = {
-			NOR = {
-				terrain = mountains
-				terrain = desert_mountains
-				terrain = forest
-				terrain = taiga
-				terrain = jungle
-				terrain = hills
-			}
-			county ?= {
-				any_county_province = {
-					is_coastal = yes
-					NOR = {
-						terrain = mountains
-						terrain = desert_mountains
-						terrain = forest
-						terrain = taiga
-						terrain = jungle
-						terrain = hills
-					}
-				}
-			}
-		}
 		AND = {
 			scope:holder.top_liege = {
 				any_realm_county = {
@@ -483,10 +490,7 @@ barony_cannot_construct_holding = {
 			terrain = desert
 			terrain = desert_mountains
 		}
-		AND = {
-			geographical_region = world_africa_sahara
-			NOT = { culture = { has_cultural_tradition = tradition_saharan_nomads } }
-		}
+		geographical_region = world_africa_sahara
 	}
 }
 
