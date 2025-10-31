@@ -11234,10 +11234,7 @@ language_yurt_01 = {
 	can_construct = {
 		custom_tooltip = {
 			text = language_yurt_2_unlock
-			OR = {
-				is_ai = no
-				num_of_known_languages >= 2
-			}
+			num_of_known_languages >= 2
 		}		
 	}
 
@@ -12058,13 +12055,10 @@ trade_yurt_01 = {
 	can_construct = {
 		custom_tooltip = {
 			text = trade_yurt_unlock_req
-			OR = {
-				is_ai = no
-				any_neighboring_top_liege_realm_owner = {
-					NOT = {
-						government_has_flag = government_is_herder
-						government_has_flag = government_is_nomadic
-					}
+			any_neighboring_top_liege_realm_owner = {
+				NOT = {
+					government_has_flag = government_is_herder
+					government_has_flag = government_is_nomadic
 				}
 			}
 		}	
@@ -13776,11 +13770,8 @@ metalworkers_cultrad_yurt_01 = {
 	can_construct = {
 		custom_tooltip = {
 			text = metalworkers_cultrad_yurt_01_unlock
-			OR = {
-				is_ai = no
-				culture ?= {
-					has_cultural_parameter = metalworkers_internal_yurt_unlock
-				}
+			culture ?= {
+				has_cultural_parameter = metalworkers_internal_yurt_unlock
 			}
 		}		
 	}
@@ -13974,7 +13965,6 @@ sorcerous_metallurgy_yurt_01 = {
 		custom_tooltip = {
 			text = sorcerous_metallurgy_yurt_01_domicile_building_desc
 			OR = {
-				is_ai = no
 				has_trait = witch
 				has_trait = lifestyle_mystic
 				has_trait = lifestyle_herbalist
@@ -14165,11 +14155,8 @@ zealous_people_yurt_01 = {
 	can_construct = {
 		custom_tooltip = {
 			text = zealous_people_yurt_01_domicile_building_desc
-			OR = {
-				is_ai = no
-				culture ?= {
-					has_cultural_parameter = zealous_people_internal_yurt_unlock
-				}
+			culture ?= {
+				has_cultural_parameter = zealous_people_internal_yurt_unlock
 			}
 		}	
 	}
@@ -14359,11 +14346,8 @@ loyal_soldiers_yurt_01 = {
 	can_construct = {
 		custom_tooltip = {
 			text = loyal_soldiers_yurt_01_domicile_building_desc
-			OR = {
-				is_ai = no
-				any_relation = {
-					type = blood_brother
-				}
+			any_relation = {
+				type = blood_brother
 			}
 		}		
 	}
@@ -14570,7 +14554,6 @@ forbearing_yurt_01 = {
 		custom_tooltip = {
 			text = forbearing_yurt_01_domicile_building_desc
 			OR = {
-				is_ai = no
 				culture ?= {
 					has_cultural_parameter = forbearing_internal_yurt_unlock
 				}
@@ -14764,11 +14747,8 @@ stalwart_defenders_yurt_01 = {
 	can_construct = {
 		custom_tooltip = {
 			text = stalwart_defenders_yurt_01_domicile_building_desc
-			OR = {
-				is_ai = no
-				culture ?= {
-					has_cultural_parameter = stalwart_defenders_internal_yurt_unlock
-				}
+			culture ?= {
+				has_cultural_parameter = stalwart_defenders_internal_yurt_unlock
 			}
 		}	
 	}
@@ -14956,10 +14936,7 @@ legalistic_yurt_01 = {
 	can_construct = {
 		custom_tooltip = {
 			text = legalistic_yurt_01_unlock
-			OR = {
-				is_ai = no
-				highest_held_title_tier >= tier_empire
-			}
+			highest_held_title_tier >= tier_empire
 		}	
 	}
 
@@ -15160,11 +15137,8 @@ horse_breeder_yurt_01 = {
 	can_construct = {
 		custom_tooltip = {
 			text = horse_breeder_yurt_01_unlock
-			OR = {
-				is_ai = no
-				culture ?= {
-					has_cultural_parameter = horse_breeder_internal_yurt_unlock
-				}
+			culture ?= {
+				has_cultural_parameter = horse_breeder_internal_yurt_unlock
 			}
 		}	
 	}
@@ -15362,10 +15336,7 @@ paiza_metal_trade_yurt_01 = {
 	can_construct = {
 		custom_tooltip = {
 			text = paiza_metal_trade_yurt_flag_desc
-			OR = {
-				is_ai = no
-				has_character_flag = paiza_metal_trade_yurt_flag
-			}
+			has_character_flag = paiza_metal_trade_yurt_flag
 		}
 	}
 
