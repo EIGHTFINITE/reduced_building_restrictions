@@ -1278,7 +1278,7 @@ lifestyle_xp_yurt_06 = {
 
 	character_modifier = {
 		monthly_lifestyle_xp_gain_mult = 0.05
-		knight_effectiveness_per_learning = 0.01
+		knight_effectiveness_per_learning = 0.001
 	}
 
 	parameters = {
@@ -1944,9 +1944,9 @@ herd_welfare_yurt_06 = {
 	}
 
 	cost = {
-		herd = yurt_external_building_herd_cost_tier_5
-		prestige = yurt_external_building_prestige_cost_tier_5
-		gold = yurt_external_building_gold_cost_tier_5
+		herd = yurt_external_building_herd_cost_tier_6
+		prestige = yurt_external_building_prestige_cost_tier_6
+		gold = yurt_external_building_gold_cost_tier_6
 	}
 
 	character_modifier = {
@@ -2687,6 +2687,270 @@ goat_yurt_06 = {
 
 	asset = {
 		icon = "gfx/interface/icons/domicile_building/domicile_goat_yurt.dds"
+		texture = "gfx/interface/window_domiciles/herd_welfare_yurt.dds"
+		intersectionmask_texture = "gfx/interface/window_domiciles/herd_welfare_yurt_mask.png"
+		soundeffect = "event:/DLC/CE2/UI/camp_buildings/ce2_ui_domicile_buildings_herdWelfareYurt"
+	}
+}
+
+reindeer_yurt_01 = {
+	construction_time = @yurt_internal_construction_time_tier_1
+	allowed_domicile_types = { yurt }
+	slot_type = internal
+	previous_building = herd_welfare_yurt_01
+
+	can_construct = {
+		custom_tooltip = {
+			text = reindeer_yurt_unlock_terrain
+			any_held_county ?= {
+				any_county_province ={
+					OR = {
+						terrain = forest
+						terrain = taiga
+					}			
+				}
+			}
+		}	
+	}
+
+	cost = {
+		herd = yurt_internal_building_herd_cost_tier_1
+		prestige = yurt_internal_building_prestige_cost_tier_1
+		gold = yurt_internal_building_gold_cost_tier_1
+	}
+
+	character_modifier = {
+		herd_capacity_add = 200
+		forest_fertility_growth_mult = 0.05
+		taiga_fertility_growth_mult = 0.05
+	}
+
+	ai_value = {
+		value = nomadic_capital_extremely_important_building
+	}
+
+	asset = {
+		icon = "gfx/interface/icons/domicile_building/domicile_reindeer_yurt.dds"
+		texture = "gfx/interface/window_domiciles/herd_welfare_yurt.dds"
+		intersectionmask_texture = "gfx/interface/window_domiciles/herd_welfare_yurt_mask.png"
+		soundeffect = "event:/DLC/CE2/UI/camp_buildings/ce2_ui_domicile_buildings_herdWelfareYurt"
+	}
+}
+
+reindeer_yurt_02 = {
+	construction_time = @yurt_internal_construction_time_tier_2
+	allowed_domicile_types = { yurt }
+	slot_type = internal
+	previous_building = reindeer_yurt_01
+
+	can_construct = {
+		custom_tooltip = {
+			text = reindeer_yurt_unlock_terrain
+			any_held_county ?= {
+				any_county_province ={
+					OR = {
+						terrain = forest
+						terrain = taiga
+					}			
+				}
+			}
+		}	
+	}
+
+	cost = {
+		herd = yurt_internal_building_herd_cost_tier_2
+		prestige = yurt_internal_building_prestige_cost_tier_2
+		gold = yurt_internal_building_gold_cost_tier_2
+	}
+
+	character_modifier = {
+		herd_capacity_add = 200
+		forest_fertility_growth_mult = 0.05
+		taiga_fertility_growth_mult = 0.05
+	}
+
+	ai_value = {
+		value = nomadic_capital_interior_building_1
+	}
+
+	asset = {
+		icon = "gfx/interface/icons/domicile_building/domicile_reindeer_yurt.dds"
+		texture = "gfx/interface/window_domiciles/herd_welfare_yurt.dds"
+		intersectionmask_texture = "gfx/interface/window_domiciles/herd_welfare_yurt_mask.png"
+		soundeffect = "event:/DLC/CE2/UI/camp_buildings/ce2_ui_domicile_buildings_herdWelfareYurt"
+	}
+}
+
+reindeer_yurt_03 = {
+	construction_time = @yurt_internal_construction_time_tier_3
+	allowed_domicile_types = { yurt }
+	slot_type = internal
+	previous_building = reindeer_yurt_02
+
+	can_construct = {
+		custom_tooltip = {
+			text = reindeer_yurt_unlock_terrain
+			any_held_county ?= {
+				any_county_province ={
+					OR = {
+						terrain = forest
+						terrain = taiga
+					}			
+				}
+			}
+		}	
+	}
+
+	cost = {
+		herd = yurt_internal_building_herd_cost_tier_3
+		prestige = yurt_internal_building_prestige_cost_tier_3
+		gold = yurt_internal_building_gold_cost_tier_3
+	}
+
+	character_modifier = {
+		herd_capacity_add = 600
+		forest_fertility_growth_mult = 0.05
+		taiga_fertility_growth_mult = 0.05
+	}
+
+	ai_value = {
+		value = nomadic_capital_interior_building_2	
+	}
+
+	asset = {
+		icon = "gfx/interface/icons/domicile_building/domicile_reindeer_yurt.dds"
+		texture = "gfx/interface/window_domiciles/herd_welfare_yurt.dds"
+		intersectionmask_texture = "gfx/interface/window_domiciles/herd_welfare_yurt_mask.png"
+		soundeffect = "event:/DLC/CE2/UI/camp_buildings/ce2_ui_domicile_buildings_herdWelfareYurt"
+	}
+}
+
+reindeer_yurt_04 = {
+	construction_time = @yurt_internal_construction_time_tier_4
+	allowed_domicile_types = { yurt }
+	slot_type = internal
+	previous_building = reindeer_yurt_03
+
+	can_construct = {
+		custom_tooltip = {
+			text = reindeer_yurt_unlock_terrain
+			any_held_county ?= {
+				any_county_province ={
+					OR = {
+						terrain = forest
+						terrain = taiga
+					}			
+				}
+			}
+		}	
+	}
+
+	cost = {
+		herd = yurt_internal_building_herd_cost_tier_4
+		prestige = yurt_internal_building_prestige_cost_tier_4
+		gold = yurt_internal_building_gold_cost_tier_4
+	}
+
+	character_modifier = {
+		herd_capacity_add = 1000
+		forest_fertility_growth_mult = 0.05
+		taiga_fertility_growth_mult = 0.05
+	}
+
+	ai_value = {
+		value = nomadic_capital_interior_building_3		
+	}
+
+	asset = {
+		icon = "gfx/interface/icons/domicile_building/domicile_reindeer_yurt.dds"
+		texture = "gfx/interface/window_domiciles/herd_welfare_yurt.dds"
+		intersectionmask_texture = "gfx/interface/window_domiciles/herd_welfare_yurt_mask.png"
+		soundeffect = "event:/DLC/CE2/UI/camp_buildings/ce2_ui_domicile_buildings_herdWelfareYurt"
+	}
+}
+
+reindeer_yurt_05 = {
+	construction_time = @yurt_internal_construction_time_tier_5
+	allowed_domicile_types = { yurt }
+	slot_type = internal
+	previous_building = reindeer_yurt_04
+
+	can_construct = {
+		custom_tooltip = {
+			text = reindeer_yurt_unlock_terrain
+			any_held_county ?= {
+				any_county_province ={
+					OR = {
+						terrain = forest
+						terrain = taiga
+					}			
+				}
+			}
+		}	
+	}
+
+	cost = {
+		herd = yurt_internal_building_herd_cost_tier_5
+		prestige = yurt_internal_building_prestige_cost_tier_5
+		gold = yurt_internal_building_gold_cost_tier_5
+	}
+
+	character_modifier = {
+		herd_capacity_add = 1000
+		forest_fertility_growth_mult = 0.15
+		taiga_fertility_growth_mult = 0.15
+	}
+
+	ai_value = {
+		value = nomadic_capital_interior_building_4
+	}
+
+	asset = {
+		icon = "gfx/interface/icons/domicile_building/domicile_reindeer_yurt.dds"
+		texture = "gfx/interface/window_domiciles/herd_welfare_yurt.dds"
+		intersectionmask_texture = "gfx/interface/window_domiciles/herd_welfare_yurt_mask.png"
+		soundeffect = "event:/DLC/CE2/UI/camp_buildings/ce2_ui_domicile_buildings_herdWelfareYurt"
+	}
+}
+
+reindeer_yurt_06 = {
+	construction_time = @yurt_internal_construction_time_tier_6
+	allowed_domicile_types = { yurt }
+	slot_type = internal
+	previous_building = reindeer_yurt_05
+
+	can_construct = {
+		custom_tooltip = {
+			text = reindeer_yurt_unlock_terrain
+			any_held_county ?= {
+				any_county_province ={
+					OR = {
+						terrain = forest
+						terrain = taiga
+					}			
+				}
+			}
+		}	
+	}
+
+	cost = {
+		herd = yurt_internal_building_herd_cost_tier_6
+		prestige = yurt_internal_building_prestige_cost_tier_6
+		gold = yurt_internal_building_gold_cost_tier_6
+	}
+
+	character_modifier = {
+		herd_capacity_add = 1000
+		forest_fertility_growth_mult = 0.15
+		taiga_fertility_growth_mult = 0.15
+	}
+
+	ai_value = {
+		value = nomadic_capital_interior_building_5	
+	}
+
+	asset = {
+		icon = "gfx/interface/icons/domicile_building/domicile_reindeer_yurt.dds"
 		texture = "gfx/interface/window_domiciles/herd_welfare_yurt.dds"
 		intersectionmask_texture = "gfx/interface/window_domiciles/herd_welfare_yurt_mask.png"
 		soundeffect = "event:/DLC/CE2/UI/camp_buildings/ce2_ui_domicile_buildings_herdWelfareYurt"
@@ -3749,8 +4013,11 @@ character_warfare_yurt_01 = {
 	character_modifier = {
 		knight_limit = 1
 		knight_effectiveness_mult = 0.05
-		knight_effectiveness_per_prowess = 0.002
 		monthly_prestige_gain_per_knight_add = 0.01
+	}
+
+	province_modifier = {
+		defender_holding_advantage = 1
 	}
 
 	ai_value = {
@@ -3784,8 +4051,11 @@ character_warfare_yurt_02 = {
 
 	character_modifier = {
 		knight_effectiveness_mult = 0.05
-		knight_effectiveness_per_prowess = 0.002
 		monthly_prestige_gain_per_knight_add = 0.01
+	}
+
+	province_modifier = {
+		defender_holding_advantage = 1
 	}
 
 	ai_value = {
@@ -3820,8 +4090,11 @@ character_warfare_yurt_03 = {
 
 	character_modifier = {
 		knight_limit = 1
-		knight_effectiveness_mult = 0.1
-		knight_effectiveness_per_prowess = 0.002
+		knight_effectiveness_mult = 0.05
+	}
+
+	province_modifier = {
+		defender_holding_advantage = 1
 	}
 
 	ai_value = {
@@ -3863,8 +4136,7 @@ character_warfare_yurt_04 = {
 	}
 
 	character_modifier = {
-		knight_effectiveness_mult = 0.1
-		knight_effectiveness_per_prowess = 0.002
+		knight_effectiveness_mult = 0.05
 	}
 
 	province_modifier = {
@@ -3910,9 +4182,12 @@ character_warfare_yurt_05 = {
 	}
 
 	character_modifier = {
-		knight_effectiveness_mult = 0.1
-		knight_effectiveness_per_prowess = 0.002
+		knight_effectiveness_mult = 0.05
 		monthly_prestige_gain_per_knight_add = 0.01
+	}
+
+	province_modifier = {
+		defender_holding_advantage = 1
 	}
 
 	ai_value = {
@@ -3955,8 +4230,8 @@ character_warfare_yurt_06 = {
 
 	character_modifier = {
 		knight_limit = 2
-		knight_effectiveness_mult = 0.1
-		knight_effectiveness_per_prowess = 0.005
+		knight_effectiveness_mult = 0.05
+		knight_effectiveness_per_prowess = 0.001
 		knight_effectiveness_per_martial = 0.001
 		knight_effectiveness_per_stewardship = 0.001
 		knight_effectiveness_per_diplomacy = 0.001
@@ -4207,7 +4482,7 @@ knight_yurt_01 = {
 
 	character_modifier = {
 		knight_limit = 1
-		knight_effectiveness_mult = 0.1
+		knight_effectiveness_mult = 0.02
 	}
 
 	ai_value = {
@@ -4235,7 +4510,7 @@ knight_yurt_02 = {
 	}
 
 	character_modifier = {
-		knight_effectiveness_mult = 0.05
+		knight_effectiveness_mult = 0.02
 	}
 
 	ai_value = {
@@ -4263,7 +4538,7 @@ knight_yurt_03 = {
 	}
 
 	character_modifier = {
-		knight_effectiveness_mult = 0.05
+		knight_effectiveness_mult = 0.02
 		knight_limit = 1
 	}
 
@@ -4294,7 +4569,7 @@ knight_yurt_04 = {
 	}
 
 	character_modifier = {
-		knight_effectiveness_mult = 0.05
+		knight_effectiveness_mult = 0.02
 	}
 
 	ai_value = {
@@ -4324,7 +4599,7 @@ knight_yurt_05 = {
 	}
 
 	character_modifier = {
-		knight_effectiveness_mult = 0.05
+		knight_effectiveness_mult = 0.02
 		knight_limit = 1
 	}
 
@@ -4355,7 +4630,7 @@ knight_yurt_06 = {
 	}
 
 	character_modifier = {
-		knight_effectiveness_mult = 0.1
+		knight_effectiveness_mult = 0.02
 		knight_limit = 2
 	}
 
@@ -4612,7 +4887,7 @@ bodyguard_yurt_02 = {
 
 	character_modifier = {
 		prowess = 1
-		knight_effectiveness_mult = 0.02
+		knight_effectiveness_per_dread = 0.0001
 	}
 
 	ai_value = {
@@ -4645,7 +4920,7 @@ bodyguard_yurt_03 = {
 
 	character_modifier = {
 		prowess = 1
-		knight_effectiveness_mult = 0.02
+		knight_effectiveness_per_dread = 0.0001
 	}
 
 	ai_value = {
@@ -4680,7 +4955,7 @@ bodyguard_yurt_04 = {
 
 	character_modifier = {
 		prowess = 1
-		knight_effectiveness_mult = 0.02
+		knight_effectiveness_per_dread = 0.0001
 		knight_limit = 1
 	}
 
@@ -4716,7 +4991,7 @@ bodyguard_yurt_05 = {
 
 	character_modifier = {
 		prowess = 1
-		knight_effectiveness_mult = 0.04
+		knight_effectiveness_per_dread = 0.0001
 	}
 
 	ai_value = {
@@ -4751,7 +5026,7 @@ bodyguard_yurt_06 = {
 
 	character_modifier = {
 		prowess = 1
-		knight_effectiveness_mult = 0.1
+		knight_effectiveness_per_dread = 0.0001
 		knight_limit = 1
 	}
 
@@ -4783,7 +5058,7 @@ accolade_yurt_01 = {
 
 	character_modifier = {
 		accolade_glory_gain_mult = 0.1
-		knight_effectiveness_per_martial = 0.005
+		knight_effectiveness_per_martial = 0.001
 		monthly_prestige_gain_per_knight_add = 0.01
 	}
 
@@ -4813,7 +5088,7 @@ accolade_yurt_02 = {
 
 	character_modifier = {
 		accolade_glory_gain_mult = 0.05
-		knight_effectiveness_per_martial = 0.005
+		knight_effectiveness_per_martial = 0.001
 		monthly_prestige_gain_per_knight_add = 0.01
 	}
 
@@ -4843,7 +5118,7 @@ accolade_yurt_03 = {
 
 	character_modifier = {
 		accolade_glory_gain_mult = 0.05
-		knight_effectiveness_per_martial = 0.005
+		knight_effectiveness_per_martial = 0.001
 		monthly_prestige_gain_per_knight_add = 0.01
 	}
 
@@ -4875,7 +5150,7 @@ accolade_yurt_04 = {
 
 	character_modifier = {
 		accolade_glory_gain_mult = 0.05
-		knight_effectiveness_per_martial = 0.005
+		knight_effectiveness_per_martial = 0.001
 		monthly_prestige_gain_per_knight_add = 0.01
 	}
 
@@ -4907,7 +5182,7 @@ accolade_yurt_05 = {
 
 	character_modifier = {
 		accolade_glory_gain_mult = 0.05
-		knight_effectiveness_per_martial = 0.005
+		knight_effectiveness_per_martial = 0.001
 		monthly_prestige_gain_per_knight_add = 0.01
 	}
 
@@ -4939,7 +5214,7 @@ accolade_yurt_06 = {
 
 	character_modifier = {
 		accolade_glory_gain_mult = 0.05
-		knight_effectiveness_per_martial = 0.005
+		knight_effectiveness_per_martial = 0.001
 		monthly_prestige_gain_per_knight_add = 0.01
 	}
 
@@ -7649,7 +7924,7 @@ agent_dread_yurt_02 = {
 
 	character_modifier = {
 		monthly_prestige_gain_per_dread_mult = 0.001
-		knight_effectiveness_per_dread = 0.001
+		knight_effectiveness_per_dread = 0.0001
 	}
 
 	ai_value = {
@@ -7684,7 +7959,7 @@ agent_dread_yurt_03 = {
 
 	character_modifier = {
 		monthly_prestige_gain_per_dread_mult = 0.001
-		knight_effectiveness_per_dread = 0.001
+		knight_effectiveness_per_dread = 0.0001
 	}
 
 	ai_value = {
@@ -7719,7 +7994,7 @@ agent_dread_yurt_04 = {
 
 	character_modifier = {
 		monthly_prestige_gain_per_dread_mult = 0.001
-		knight_effectiveness_per_dread = 0.001
+		knight_effectiveness_per_dread = 0.0001
 	}
 
 	ai_value = {
@@ -7754,7 +8029,7 @@ agent_dread_yurt_05 = {
 
 	character_modifier = {
 		monthly_prestige_gain_per_dread_mult = 0.001
-		knight_effectiveness_per_dread = 0.001
+		knight_effectiveness_per_dread = 0.0001
 	}
 
 	ai_value = {
@@ -7789,7 +8064,7 @@ agent_dread_yurt_06 = {
 
 	character_modifier = {
 		monthly_prestige_gain_per_dread_mult = 0.001
-		knight_effectiveness_per_dread = 0.001
+		knight_effectiveness_per_dread = 0.0001
 	}
 
 	ai_value = {
@@ -12221,8 +12496,8 @@ paiza_yurt_06 = {
 	}
 
 	parameters = {
-		nomad_yurt_paiza_obedience_bonus_lvl_2 = yes
-		nomad_yurt_paiza_abuse_less_likely_lvl_2 = yes
+		nomad_yurt_paiza_obedience_bonus_lvl_3 = yes
+		nomad_yurt_paiza_abuse_less_likely_lvl_3 = yes
 	}
 
 	character_modifier = {
@@ -13301,7 +13576,7 @@ knight_trade_yurt_01 = {
 	}
 
 	character_modifier = {
-		knight_effectiveness_per_stewardship = 0.003
+		knight_effectiveness_per_stewardship = 0.001
 	}
 
 	ai_value = {
@@ -13333,7 +13608,7 @@ knight_trade_yurt_02 = {
 	}
 
 	character_modifier = {
-		knight_effectiveness_per_stewardship = 0.003
+		knight_effectiveness_per_stewardship = 0.001
 	}
 
 	ai_value = {
@@ -13367,7 +13642,7 @@ knight_trade_yurt_03 = {
 	}
 
 	character_modifier = {
-		knight_effectiveness_per_stewardship = 0.003
+		knight_effectiveness_per_stewardship = 0.001
 	}
 
 	ai_value = {
@@ -13401,7 +13676,7 @@ knight_trade_yurt_04 = {
 	}
 
 	character_modifier = {
-		knight_effectiveness_per_stewardship = 0.003
+		knight_effectiveness_per_stewardship = 0.001
 	}
 
 	ai_value = {
@@ -13435,7 +13710,7 @@ knight_trade_yurt_05 = {
 	}
 
 	character_modifier = {
-		knight_effectiveness_per_stewardship = 0.003
+		knight_effectiveness_per_stewardship = 0.001
 	}
 
 	ai_value = {
@@ -13469,7 +13744,7 @@ knight_trade_yurt_06 = {
 	}
 
 	character_modifier = {
-		knight_effectiveness_per_stewardship = 0.005
+		knight_effectiveness_per_stewardship = 0.001
 	}
 
 	ai_value = {
