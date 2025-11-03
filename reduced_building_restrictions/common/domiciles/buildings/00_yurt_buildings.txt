@@ -129,7 +129,7 @@ yurt_main_02 = {
 	character_modifier = {
 		domicile_external_slots_capacity_add = 1
 		domicile_monthly_prestige_add = 0.5
-		herd_capacity_mult = 0.05
+		herd_gain_mult = 0.05
 		domicile_monthly_gold_add = 0.25
 	}
 
@@ -178,10 +178,10 @@ yurt_main_03 = {
 		domicile_external_slots_capacity_add = 1
 		domicile_monthly_gold_add = 0.25
 		domicile_monthly_prestige_add = 0.5
-		herd_capacity_mult = 0.05
+		herd_gain_mult = 0.05
 		additional_fort_level = 1
 		vassal_limit_max = 2
-		herd_capacity_add = 1000
+		herd_capacity_add = 500
 	}
 
 	province_modifier = {
@@ -232,10 +232,10 @@ yurt_main_04 = {
 		domicile_external_slots_capacity_add = 1
 		domicile_monthly_gold_add = 0.25
 		domicile_monthly_prestige_add = 0.5
-		herd_capacity_mult = 0.05
+		herd_gain_mult = 0.05
 		additional_fort_level = 1
 		vassal_limit_max = 2
-		herd_capacity_add = 2000
+		herd_capacity_add = 1000
 	}
 
 	province_modifier = {
@@ -287,10 +287,10 @@ yurt_main_05 = {
 		domicile_external_slots_capacity_add = 1
 		domicile_monthly_gold_add = 0.5
 		domicile_monthly_prestige_add = 0.5
-		herd_capacity_mult = 0.05
+		herd_gain_mult = 0.05
 		additional_fort_level = 2
 		vassal_limit_max = 5
-		herd_capacity_add = 2000
+		herd_capacity_add = 1000
 	}
 
 	province_modifier = {
@@ -341,9 +341,9 @@ yurt_main_06 = {
 		domicile_monthly_gold_add = 0.50
 		additional_fort_level = 2
 		domicile_monthly_prestige_add = 0.5
-		herd_capacity_mult = 0.05
+		herd_gain_mult = 0.05
 		vassal_limit_max = 5
-		herd_capacity_add = 5000
+		herd_capacity_add = 2500
 	}
 
 	province_modifier = {
@@ -384,7 +384,7 @@ raid_main_yurt_01 = {
 	character_modifier = {
 		max_loot_mult = 0.1
 		movement_speed_land_raiding = 0.05
-		herd_capacity_add = 200
+		herd_capacity_add = 100
 	}
 
 	ai_value = {
@@ -414,7 +414,7 @@ raid_main_yurt_02 = {
 	character_modifier = {
 		max_loot_mult = 0.1
 		movement_speed_land_raiding = 0.05
-		herd_capacity_add = 400
+		herd_capacity_add = 200
 	}
 
 	ai_value = {
@@ -444,7 +444,7 @@ raid_main_yurt_03 = {
 	character_modifier = {
 		max_loot_mult = 0.1
 		movement_speed_land_raiding = 0.05
-		herd_capacity_add = 600
+		herd_capacity_add = 300
 	}
 
 	ai_value = {
@@ -475,7 +475,7 @@ raid_main_yurt_04 = {
 	character_modifier = {
 		max_loot_mult = 0.1
 		movement_speed_land_raiding = 0.05
-		herd_capacity_add = 800
+		herd_capacity_add = 400
 	}
 
 	ai_value = {
@@ -506,7 +506,7 @@ raid_main_yurt_05 = {
 	character_modifier = {
 		max_loot_mult = 0.1
 		movement_speed_land_raiding = 0.05
-		herd_capacity_add = 1000
+		herd_capacity_add = 500
 	}
 
 	ai_value = {
@@ -537,7 +537,7 @@ raid_main_yurt_06 = {
 	character_modifier = {
 		max_loot_mult = 0.1
 		movement_speed_land_raiding = 0.05
-		herd_capacity_add = 1200
+		herd_capacity_add = 600
 	}
 
 	ai_value = {
@@ -1002,7 +1002,7 @@ herd_conversion_main_yurt_03 = {
 
 	character_modifier = {
 		herd_conversion = 0.005
-		herd_capacity_mult = 0.02
+		herd_gain_mult = 0.02
 	}
 
 	ai_value = {
@@ -1032,7 +1032,7 @@ herd_conversion_main_yurt_04 = {
 
 	character_modifier = {
 		herd_conversion = 0.005
-		herd_capacity_mult = 0.02
+		herd_gain_mult = 0.02
 	}
 
 	ai_value = {
@@ -1062,7 +1062,7 @@ herd_conversion_main_yurt_05 = {
 
 	character_modifier = {
 		herd_conversion = 0.005
-		herd_capacity_mult = 0.02
+		herd_gain_mult = 0.02
 	}
 
 	ai_value = {
@@ -1092,7 +1092,7 @@ herd_conversion_main_yurt_06 = {
 
 	character_modifier = {
 		herd_conversion = 0.005
-		herd_capacity_mult = 0.04
+		herd_gain_mult = 0.04
 	}
 
 	ai_value = {
@@ -1744,7 +1744,7 @@ herd_welfare_yurt_01 = {
 
 	character_modifier = {
 		county_fertility_growth_mult = 0.05
-		herd_capacity_add = 600
+		herd_capacity_add = 300
 	}
 
 	ai_value = {
@@ -1773,7 +1773,7 @@ herd_welfare_yurt_02 = {
 
 	character_modifier = {
 		county_fertility_growth_mult = 0.05
-		herd_capacity_add = 400
+		herd_capacity_add = 200
 	}
 
 	ai_value = {
@@ -1811,7 +1811,7 @@ herd_welfare_yurt_03 = {
 
 	character_modifier = {
 		county_fertility_growth_mult = 0.05
-		herd_capacity_add = 600
+		herd_capacity_add = 300
 		vassal_herd_contribution_mult = 0.03
 	}
 
@@ -1857,7 +1857,7 @@ herd_welfare_yurt_04 = {
 
 	character_modifier = {
 		county_fertility_growth_mult = 0.05
-		herd_capacity_add = 1000
+		herd_capacity_add = 500
 		vassal_herd_contribution_mult = 0.03
 	}
 
@@ -1906,7 +1906,7 @@ herd_welfare_yurt_05 = {
 
 	character_modifier = {
 		county_fertility_growth_mult = 0.05
-		herd_capacity_add = 2000
+		herd_capacity_add = 1000
 		vassal_herd_contribution_mult = 0.03
 	}
 
@@ -1951,7 +1951,7 @@ herd_welfare_yurt_06 = {
 
 	character_modifier = {
 		county_fertility_growth_mult = 0.1
-		herd_capacity_add = 4000
+		herd_capacity_add = 2000
 		vassal_herd_contribution_mult = 0.03
 	}
 
@@ -1993,7 +1993,7 @@ herd_capacity_yurt_01 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 800
+		herd_capacity_add = 400
 	}
 
 	ai_value = {
@@ -2021,7 +2021,7 @@ herd_capacity_yurt_02 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 600
+		herd_capacity_add = 300
 	}
 
 	ai_value = {
@@ -2049,7 +2049,7 @@ herd_capacity_yurt_03 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 600
+		herd_capacity_add = 300
 	}
 
 	ai_value = {
@@ -2078,8 +2078,8 @@ herd_capacity_yurt_04 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 1000
-		herd_capacity_mult = 0.1
+		herd_capacity_add = 500
+		herd_gain_mult = 0.1
 	}
 
 	ai_value = {
@@ -2108,8 +2108,8 @@ herd_capacity_yurt_05 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 2000
-		herd_capacity_mult = 0.1
+		herd_capacity_add = 1000
+		herd_gain_mult = 0.1
 	}
 
 	ai_value = {
@@ -2138,8 +2138,8 @@ herd_capacity_yurt_06 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 4000
-		herd_capacity_mult = 0.1
+		herd_capacity_add = 2000
+		herd_gain_mult = 0.1
 	}
 
 	ai_value = {
@@ -2179,7 +2179,7 @@ camel_yurt_01 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 200
+		herd_capacity_add = 100
 		desert_fertility_growth_mult = 0.05
 		drylands_fertility_growth_mult = 0.05
 		oasis_fertility_growth_mult = 0.05
@@ -2221,7 +2221,7 @@ camel_yurt_02 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 200
+		herd_capacity_add = 100
 		desert_fertility_growth_mult = 0.05
 		drylands_fertility_growth_mult = 0.05
 		oasis_fertility_growth_mult = 0.05
@@ -2263,7 +2263,7 @@ camel_yurt_03 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 600
+		herd_capacity_add = 300
 		desert_fertility_growth_mult = 0.05
 		drylands_fertility_growth_mult = 0.05
 		oasis_fertility_growth_mult = 0.05
@@ -2307,7 +2307,7 @@ camel_yurt_04 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 1000
+		herd_capacity_add = 500
 		desert_fertility_growth_mult = 0.05
 		drylands_fertility_growth_mult = 0.05
 		oasis_fertility_growth_mult = 0.05
@@ -2351,7 +2351,7 @@ camel_yurt_05 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 1000
+		herd_capacity_add = 500
 		desert_fertility_growth_mult = 0.15
 		drylands_fertility_growth_mult = 0.15
 		oasis_fertility_growth_mult = 0.15
@@ -2395,7 +2395,7 @@ camel_yurt_06 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 1000
+		herd_capacity_add = 500
 		desert_fertility_growth_mult = 0.15
 		drylands_fertility_growth_mult = 0.15
 		oasis_fertility_growth_mult = 0.15
@@ -2442,7 +2442,7 @@ goat_yurt_01 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 200
+		herd_capacity_add = 100
 		mountains_fertility_growth_mult = 0.05
 		hills_fertility_growth_mult = 0.05
 		desert_mountains_fertility_growth_mult = 0.05
@@ -2487,7 +2487,7 @@ goat_yurt_02 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 200
+		herd_capacity_add = 100
 		mountains_fertility_growth_mult = 0.05
 		hills_fertility_growth_mult = 0.05
 		desert_mountains_fertility_growth_mult = 0.05
@@ -2532,7 +2532,7 @@ goat_yurt_03 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 600
+		herd_capacity_add = 300
 		mountains_fertility_growth_mult = 0.05
 		hills_fertility_growth_mult = 0.05
 		desert_mountains_fertility_growth_mult = 0.05
@@ -2579,7 +2579,7 @@ goat_yurt_04 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 1000
+		herd_capacity_add = 500
 		mountains_fertility_growth_mult = 0.05
 		hills_fertility_growth_mult = 0.05
 		desert_mountains_fertility_growth_mult = 0.05
@@ -2626,7 +2626,7 @@ goat_yurt_05 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 1000
+		herd_capacity_add = 500
 		mountains_fertility_growth_mult = 0.15
 		hills_fertility_growth_mult = 0.15
 		desert_mountains_fertility_growth_mult = 0.15
@@ -2673,7 +2673,7 @@ goat_yurt_06 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 1000
+		herd_capacity_add = 500
 		mountains_fertility_growth_mult = 0.15
 		hills_fertility_growth_mult = 0.15
 		desert_mountains_fertility_growth_mult = 0.15
@@ -2720,7 +2720,7 @@ reindeer_yurt_01 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 200
+		herd_capacity_add = 100
 		forest_fertility_growth_mult = 0.05
 		taiga_fertility_growth_mult = 0.05
 	}
@@ -2764,7 +2764,7 @@ reindeer_yurt_02 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 200
+		herd_capacity_add = 100
 		forest_fertility_growth_mult = 0.05
 		taiga_fertility_growth_mult = 0.05
 	}
@@ -2808,7 +2808,7 @@ reindeer_yurt_03 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 600
+		herd_capacity_add = 300
 		forest_fertility_growth_mult = 0.05
 		taiga_fertility_growth_mult = 0.05
 	}
@@ -2852,7 +2852,7 @@ reindeer_yurt_04 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 1000
+		herd_capacity_add = 500
 		forest_fertility_growth_mult = 0.05
 		taiga_fertility_growth_mult = 0.05
 	}
@@ -2896,7 +2896,7 @@ reindeer_yurt_05 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 1000
+		herd_capacity_add = 500
 		forest_fertility_growth_mult = 0.15
 		taiga_fertility_growth_mult = 0.15
 	}
@@ -2940,7 +2940,7 @@ reindeer_yurt_06 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 1000
+		herd_capacity_add = 500
 		forest_fertility_growth_mult = 0.15
 		taiga_fertility_growth_mult = 0.15
 	}
@@ -2984,7 +2984,7 @@ sheep_yurt_01 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 200
+		herd_capacity_add = 100
 		steppe_fertility_growth_mult = 0.05
 		plains_fertility_growth_mult = 0.05
 		farmlands_fertility_growth_mult = 0.05
@@ -3029,7 +3029,7 @@ sheep_yurt_02 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 200
+		herd_capacity_add = 100
 		steppe_fertility_growth_mult = 0.05
 		plains_fertility_growth_mult = 0.05
 		farmlands_fertility_growth_mult = 0.05
@@ -3074,7 +3074,7 @@ sheep_yurt_03 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 600
+		herd_capacity_add = 300
 		steppe_fertility_growth_mult = 0.05
 		plains_fertility_growth_mult = 0.05
 		farmlands_fertility_growth_mult = 0.05
@@ -3121,7 +3121,7 @@ sheep_yurt_04 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 1000
+		herd_capacity_add = 500
 		steppe_fertility_growth_mult = 0.05
 		plains_fertility_growth_mult = 0.05
 		farmlands_fertility_growth_mult = 0.05
@@ -3168,7 +3168,7 @@ sheep_yurt_05 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 1000
+		herd_capacity_add = 500
 		steppe_fertility_growth_mult = 0.15
 		plains_fertility_growth_mult = 0.15
 		farmlands_fertility_growth_mult = 0.15
@@ -3215,7 +3215,7 @@ sheep_yurt_06 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 1000
+		herd_capacity_add = 500
 		steppe_fertility_growth_mult = 0.15
 		plains_fertility_growth_mult = 0.15
 		farmlands_fertility_growth_mult = 0.15
@@ -3252,7 +3252,7 @@ steal_herd_yurt_01 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 200
+		herd_capacity_add = 100
 	}
 
 	ai_value = {
@@ -3285,7 +3285,7 @@ steal_herd_yurt_02 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 200
+		herd_capacity_add = 100
 	}
 
 	ai_value = {
@@ -3319,7 +3319,7 @@ steal_herd_yurt_03 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 400
+		herd_capacity_add = 200
 	}
 
 	ai_value = {
@@ -3354,7 +3354,7 @@ steal_herd_yurt_04 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 600
+		herd_capacity_add = 300
 	}
 
 	ai_value = {
@@ -3389,7 +3389,7 @@ steal_herd_yurt_05 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 1000
+		herd_capacity_add = 500
 	}
 
 	ai_value = {
@@ -3424,7 +3424,7 @@ steal_herd_yurt_06 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 1000
+		herd_capacity_add = 500
 	}
 
 	ai_value = {
@@ -3454,7 +3454,7 @@ consumption_yurt_01 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 200
+		herd_capacity_add = 100
 		county_fertility_growth_mult = 0.02
 	}
 
@@ -3484,7 +3484,7 @@ consumption_yurt_02 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 200
+		herd_capacity_add = 100
 		county_fertility_growth_mult = 0.02
 	}
 
@@ -3514,7 +3514,7 @@ consumption_yurt_03 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 400
+		herd_capacity_add = 200
 		county_fertility_growth_mult = 0.03
 	}
 
@@ -3545,7 +3545,7 @@ consumption_yurt_04 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 600
+		herd_capacity_add = 300
 		county_fertility_growth_mult = 0.03
 	}
 
@@ -3576,7 +3576,7 @@ consumption_yurt_05 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 1000
+		herd_capacity_add = 500
 		county_fertility_growth_mult = 0.05
 	}
 
@@ -3607,7 +3607,7 @@ consumption_yurt_06 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 1000
+		herd_capacity_add = 500
 		county_fertility_growth_mult = 0.05
 	}
 
@@ -3638,7 +3638,7 @@ herd_wealth_yurt_01 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 200
+		herd_capacity_add = 100
 		monthly_income_from_herd_mult = 0.01
 	}
 
@@ -3668,7 +3668,7 @@ herd_wealth_yurt_02 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 200
+		herd_capacity_add = 100
 		monthly_income_from_herd_mult = 0.01
 	}
 
@@ -3698,7 +3698,7 @@ herd_wealth_yurt_03 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 400
+		herd_capacity_add = 200
 		monthly_income_from_herd_mult = 0.01
 	}
 
@@ -3729,7 +3729,7 @@ herd_wealth_yurt_04 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 600
+		herd_capacity_add = 300
 		monthly_income_from_herd_mult = 0.01
 	}
 
@@ -3760,7 +3760,7 @@ herd_wealth_yurt_05 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 1000
+		herd_capacity_add = 500
 		monthly_income_from_herd_mult = 0.01
 	}
 
@@ -3791,7 +3791,7 @@ herd_wealth_yurt_06 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 1000
+		herd_capacity_add = 500
 		monthly_income_from_herd_mult = 0.01
 	}
 
@@ -3822,7 +3822,7 @@ herder_yurt_01 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 200
+		herd_capacity_add = 100
 		herd_gain_mult = 0.02
 	}
 
@@ -3853,7 +3853,7 @@ herder_yurt_02 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 200
+		herd_capacity_add = 100
 		herd_gain_mult = 0.02
 	}
 
@@ -3883,7 +3883,7 @@ herder_yurt_03 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 400
+		herd_capacity_add = 200
 	}
 
 	ai_value = {
@@ -3913,7 +3913,7 @@ herder_yurt_04 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 600
+		herd_capacity_add = 300
 	}
 
 	ai_value = {
@@ -3943,7 +3943,7 @@ herder_yurt_05 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 1000
+		herd_capacity_add = 500
 		herd_gain_mult = 0.02
 	}
 
@@ -3974,7 +3974,7 @@ herder_yurt_06 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 1000
+		herd_capacity_add = 500
 		herd_gain_mult = 0.02
 	}
 
@@ -6684,7 +6684,7 @@ court_yurt_01 = {
 		owned_personal_scheme_success_chance_add = 4
 		tributary_tax_mult = 0.04
 		vassal_herd_contribution_mult = 0.04
-		herd_capacity_mult = 0.04
+		herd_gain_mult = 0.04
 	}
 
 	parameters = {
@@ -6721,7 +6721,7 @@ court_yurt_02 = {
 		vassal_herd_contribution_mult = 0.04
 		cowed_vassal_herd_contribution_mult = 0.04
 		owned_hostile_scheme_success_chance_add = 4
-		herd_capacity_mult = 0.04
+		herd_gain_mult = 0.04
 	}
 
 	parameters = {
@@ -6760,7 +6760,7 @@ court_yurt_03 = {
 		vassal_herd_contribution_mult = 0.04
 		cowed_vassal_herd_contribution_mult = 0.04
 		owned_hostile_scheme_success_chance_add = 6
-		herd_capacity_mult = 0.06
+		herd_gain_mult = 0.06
 	}
 
 	parameters = {
@@ -6806,7 +6806,7 @@ court_yurt_04 = {
 		cowed_vassal_herd_contribution_mult = 0.04
 		intimidated_vassal_herd_contribution_mult = 0.04
 		owned_hostile_scheme_success_chance_add = 4
-		herd_capacity_mult = 0.06
+		herd_gain_mult = 0.06
 	}
 
 	province_modifier = {
@@ -6857,7 +6857,7 @@ court_yurt_05 = {
 		cowed_vassal_herd_contribution_mult = 0.04
 		intimidated_vassal_herd_contribution_mult= 0.04
 		owned_hostile_scheme_success_chance_add = 5
-		herd_capacity_mult = 0.08
+		herd_gain_mult = 0.08
 	}
 
 	parameters = {
@@ -6905,7 +6905,7 @@ court_yurt_06 = {
 		intimidated_vassal_herd_contribution_mult= 0.04
 		owned_hostile_scheme_success_chance_add = 5
 		max_hostile_schemes_add = 1
-		herd_capacity_mult = 0.08
+		herd_gain_mult = 0.08
 	}
 
 	parameters = {
@@ -11040,7 +11040,7 @@ fertility_mystical_yurt_01 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 200
+		herd_capacity_add = 100
 	}
 
 	ai_value = {
@@ -11072,7 +11072,7 @@ fertility_mystical_yurt_02 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 200
+		herd_capacity_add = 100
 	}
 
 	ai_value = {
@@ -11106,7 +11106,7 @@ fertility_mystical_yurt_03 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 400
+		herd_capacity_add = 200
 	}
 
 	ai_value = {
@@ -11140,7 +11140,7 @@ fertility_mystical_yurt_04 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 400
+		herd_capacity_add = 200
 	}
 
 	ai_value = {
@@ -11174,7 +11174,7 @@ fertility_mystical_yurt_05 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 400
+		herd_capacity_add = 200
 	}
 
 	ai_value = {
@@ -11208,7 +11208,7 @@ fertility_mystical_yurt_06 = {
 	}
 
 	character_modifier = {
-		herd_capacity_add = 400
+		herd_capacity_add = 200
 	}
 
 	ai_value = {

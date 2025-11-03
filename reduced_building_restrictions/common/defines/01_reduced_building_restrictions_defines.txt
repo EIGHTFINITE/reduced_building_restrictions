@@ -1,0 +1,11 @@
+﻿NCharacter = {
+	BASE_HERD_CAPACITY = { 				# base herd capacity for different title tiers
+		0 		# Unlanded
+		500 	# Barony
+		1500 	# County
+		2500 	# Duchy
+		3750 	# Kingdom
+		5000 	# Empire
+		5000 	# Hegemony
+	}
+}
