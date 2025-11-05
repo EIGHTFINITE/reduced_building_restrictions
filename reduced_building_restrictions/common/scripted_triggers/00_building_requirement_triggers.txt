@@ -190,10 +190,7 @@ building_military_camps_requirement_terrain = {
 }
 
 building_regimental_grounds_requirement_terrain = {
-	OR = {
-		terrain = floodplains
-		terrain = farmlands
-	}
+	# All terrains
 }
 
 building_ramparts_requirement_terrain = {
