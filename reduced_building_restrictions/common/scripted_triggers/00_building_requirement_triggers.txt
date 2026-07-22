@@ -612,7 +612,11 @@ barony_cannot_construct_holding = {
 		}
 		AND = {
 			geographical_region = world_africa_sahara
-			NOT = { culture = { has_cultural_tradition = tradition_saharan_nomads } }
+			culture = { NOR = {
+				has_cultural_tradition = tradition_saharan_nomads
+				any_parent_culture_or_above = { this = culture:butr }
+				any_parent_culture_or_above = { this = culture:zaghawa }
+			} }
 		}
 	}
 }
