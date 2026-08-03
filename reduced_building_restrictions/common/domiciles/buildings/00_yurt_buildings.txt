@@ -1309,11 +1309,25 @@ fishing_yurt_01 = {
 			text = nomad_unlocked_fishing_yurt_flag_desc
 			OR = {
 				has_character_flag = nomad_unlocked_fishing_yurt_flag
-				root.domicile.domicile_location.county ?= {
-					OR = {
-						is_riverside_county = yes
-						is_lakeside_county = yes
-						is_coastal_county = yes
+				AND = {
+					root.domicile.domicile_culture ?= {
+						OR = {
+							has_cultural_tradition = tradition_fp1_coastal_warriors
+							has_cultural_tradition = tradition_maritime_mercantilism
+							has_cultural_tradition = tradition_polders
+							has_cultural_tradition = tradition_wetlanders
+							has_cultural_tradition = tradition_fishermen
+							has_cultural_tradition = tradition_seafaring
+							has_cultural_tradition = tradition_fp1_coastal_warriors
+							has_cultural_tradition = tradition_practiced_pirates
+						}
+					}
+					root.domicile.domicile_location.county ?= {
+						OR = {
+							is_riverside_county = yes
+							is_lakeside_county = yes
+							is_coastal_county = yes
+						}
 					}
 				}
 			}
@@ -1374,11 +1388,25 @@ fishing_yurt_02 = {
 			text = nomad_unlocked_fishing_yurt_flag_desc
 			OR = {
 				has_character_flag = nomad_unlocked_fishing_yurt_flag
-				root.domicile.domicile_location.county ?= {
-					OR = {
-						is_riverside_county = yes
-						is_lakeside_county = yes
-						is_coastal_county = yes
+				AND = {
+					root.domicile.domicile_culture ?= {
+						OR = {
+							has_cultural_tradition = tradition_fp1_coastal_warriors
+							has_cultural_tradition = tradition_maritime_mercantilism
+							has_cultural_tradition = tradition_polders
+							has_cultural_tradition = tradition_wetlanders
+							has_cultural_tradition = tradition_fishermen
+							has_cultural_tradition = tradition_seafaring
+							has_cultural_tradition = tradition_fp1_coastal_warriors
+							has_cultural_tradition = tradition_practiced_pirates
+						}
+					}
+					root.domicile.domicile_location.county ?= {
+						OR = {
+							is_riverside_county = yes
+							is_lakeside_county = yes
+							is_coastal_county = yes
+						}
 					}
 				}
 			}
@@ -1439,11 +1467,25 @@ fishing_yurt_03 = {
 			text = nomad_unlocked_fishing_yurt_flag_desc
 			OR = {
 				has_character_flag = nomad_unlocked_fishing_yurt_flag
-				root.domicile.domicile_location.county ?= {
-					OR = {
-						is_riverside_county = yes
-						is_lakeside_county = yes
-						is_coastal_county = yes
+				AND = {
+					root.domicile.domicile_culture ?= {
+						OR = {
+							has_cultural_tradition = tradition_fp1_coastal_warriors
+							has_cultural_tradition = tradition_maritime_mercantilism
+							has_cultural_tradition = tradition_polders
+							has_cultural_tradition = tradition_wetlanders
+							has_cultural_tradition = tradition_fishermen
+							has_cultural_tradition = tradition_seafaring
+							has_cultural_tradition = tradition_fp1_coastal_warriors
+							has_cultural_tradition = tradition_practiced_pirates
+						}
+					}
+					root.domicile.domicile_location.county ?= {
+						OR = {
+							is_riverside_county = yes
+							is_lakeside_county = yes
+							is_coastal_county = yes
+						}
 					}
 				}
 			}
@@ -1512,11 +1554,25 @@ fishing_yurt_04 = {
 			text = nomad_unlocked_fishing_yurt_flag_desc
 			OR = {
 				has_character_flag = nomad_unlocked_fishing_yurt_flag
-				root.domicile.domicile_location.county ?= {
-					OR = {
-						is_riverside_county = yes
-						is_lakeside_county = yes
-						is_coastal_county = yes
+				AND = {
+					root.domicile.domicile_culture ?= {
+						OR = {
+							has_cultural_tradition = tradition_fp1_coastal_warriors
+							has_cultural_tradition = tradition_maritime_mercantilism
+							has_cultural_tradition = tradition_polders
+							has_cultural_tradition = tradition_wetlanders
+							has_cultural_tradition = tradition_fishermen
+							has_cultural_tradition = tradition_seafaring
+							has_cultural_tradition = tradition_fp1_coastal_warriors
+							has_cultural_tradition = tradition_practiced_pirates
+						}
+					}
+					root.domicile.domicile_location.county ?= {
+						OR = {
+							is_riverside_county = yes
+							is_lakeside_county = yes
+							is_coastal_county = yes
+						}
 					}
 				}
 			}
@@ -1585,11 +1641,25 @@ fishing_yurt_05 = {
 			text = nomad_unlocked_fishing_yurt_flag_desc
 			OR = {
 				has_character_flag = nomad_unlocked_fishing_yurt_flag
-				root.domicile.domicile_location.county ?= {
-					OR = {
-						is_riverside_county = yes
-						is_lakeside_county = yes
-						is_coastal_county = yes
+				AND = {
+					root.domicile.domicile_culture ?= {
+						OR = {
+							has_cultural_tradition = tradition_fp1_coastal_warriors
+							has_cultural_tradition = tradition_maritime_mercantilism
+							has_cultural_tradition = tradition_polders
+							has_cultural_tradition = tradition_wetlanders
+							has_cultural_tradition = tradition_fishermen
+							has_cultural_tradition = tradition_seafaring
+							has_cultural_tradition = tradition_fp1_coastal_warriors
+							has_cultural_tradition = tradition_practiced_pirates
+						}
+					}
+					root.domicile.domicile_location.county ?= {
+						OR = {
+							is_riverside_county = yes
+							is_lakeside_county = yes
+							is_coastal_county = yes
+						}
 					}
 				}
 			}
@@ -1658,11 +1728,25 @@ fishing_yurt_06 = {
 			text = nomad_unlocked_fishing_yurt_flag_desc
 			OR = {
 				has_character_flag = nomad_unlocked_fishing_yurt_flag
-				root.domicile.domicile_location.county ?= {
-					OR = {
-						is_riverside_county = yes
-						is_lakeside_county = yes
-						is_coastal_county = yes
+				AND = {
+					root.domicile.domicile_culture ?= {
+						OR = {
+							has_cultural_tradition = tradition_fp1_coastal_warriors
+							has_cultural_tradition = tradition_maritime_mercantilism
+							has_cultural_tradition = tradition_polders
+							has_cultural_tradition = tradition_wetlanders
+							has_cultural_tradition = tradition_fishermen
+							has_cultural_tradition = tradition_seafaring
+							has_cultural_tradition = tradition_fp1_coastal_warriors
+							has_cultural_tradition = tradition_practiced_pirates
+						}
+					}
+					root.domicile.domicile_location.county ?= {
+						OR = {
+							is_riverside_county = yes
+							is_lakeside_county = yes
+							is_coastal_county = yes
+						}
 					}
 				}
 			}
