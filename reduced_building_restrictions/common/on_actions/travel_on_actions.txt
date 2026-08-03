@@ -1326,6 +1326,89 @@ on_travel_plan_start = {
 				}
 			}
 		}
+		# tradeport yurt
+		if = {
+			limit = {
+				government_has_flag = government_is_nomadic
+				domicile ?= {
+					has_domicile_building_or_higher = tradeport_yurt_01
+				}
+			}
+			domicile ?= {
+				if = {
+					limit = { has_domicile_building = tradeport_yurt_01_coastal_warriors }
+					remove_domicile_building = tradeport_yurt_01_coastal_warriors
+				}
+				if = {
+					limit = { has_domicile_building = tradeport_yurt_02_coastal_warriors }
+					remove_domicile_building = tradeport_yurt_02_coastal_warriors
+				}
+				if = {
+					limit = { has_domicile_building = tradeport_yurt_03_coastal_warriors }
+					remove_domicile_building = tradeport_yurt_03_coastal_warriors
+				}
+				if = {
+					limit = { has_domicile_building = tradeport_yurt_04_coastal_warriors }
+					remove_domicile_building = tradeport_yurt_04_coastal_warriors
+				}
+				if = {
+					limit = { has_domicile_building = tradeport_yurt_05_coastal_warriors }
+					remove_domicile_building = tradeport_yurt_05_coastal_warriors
+				}
+				if = {
+					limit = { has_domicile_building = tradeport_yurt_06_coastal_warriors }
+					remove_domicile_building = tradeport_yurt_06_coastal_warriors
+				}
+				if = {
+					limit = { has_domicile_building = tradeport_yurt_01_seafaring }
+					remove_domicile_building = tradeport_yurt_01_seafaring
+				}
+				if = {
+					limit = { has_domicile_building = tradeport_yurt_02_seafaring }
+					remove_domicile_building = tradeport_yurt_02_seafaring
+				}
+				if = {
+					limit = { has_domicile_building = tradeport_yurt_03_seafaring }
+					remove_domicile_building = tradeport_yurt_03_seafaring
+				}
+				if = {
+					limit = { has_domicile_building = tradeport_yurt_04_seafaring }
+					remove_domicile_building = tradeport_yurt_04_seafaring
+				}
+				if = {
+					limit = { has_domicile_building = tradeport_yurt_05_seafaring }
+					remove_domicile_building = tradeport_yurt_05_seafaring
+				}
+				if = {
+					limit = { has_domicile_building = tradeport_yurt_06_seafaring }
+					remove_domicile_building = tradeport_yurt_06_seafaring
+				}
+				if = {
+					limit = { has_domicile_building = tradeport_yurt_01_both }
+					remove_domicile_building = tradeport_yurt_01_both
+				}
+				if = {
+					limit = { has_domicile_building = tradeport_yurt_02_both }
+					remove_domicile_building = tradeport_yurt_02_both
+				}
+				if = {
+					limit = { has_domicile_building = tradeport_yurt_03_both }
+					remove_domicile_building = tradeport_yurt_03_both
+				}
+				if = {
+					limit = { has_domicile_building = tradeport_yurt_04_both }
+					remove_domicile_building = tradeport_yurt_04_both
+				}
+				if = {
+					limit = { has_domicile_building = tradeport_yurt_05_both }
+					remove_domicile_building = tradeport_yurt_05_both
+				}
+				if = {
+					limit = { has_domicile_building = tradeport_yurt_06_both }
+					remove_domicile_building = tradeport_yurt_06_both
+				}
+			}
+		}
 		# Wayfarer Popularity
 		of_the_people_effect = yes
 		# Wayfarer Stress Loss
