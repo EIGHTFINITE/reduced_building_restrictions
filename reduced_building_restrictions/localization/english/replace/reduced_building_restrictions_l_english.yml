@@ -1,4 +1,9 @@
 ﻿l_english:
+ reindeer_yurt_02_domicile_building: "$reindeer_yurt_01_domicile_building$"
+ reindeer_yurt_03_domicile_building: "$reindeer_yurt_01_domicile_building$"
+ reindeer_yurt_04_domicile_building: "$reindeer_yurt_01_domicile_building$"
+ reindeer_yurt_05_domicile_building: "$reindeer_yurt_01_domicile_building$"
+ reindeer_yurt_06_domicile_building: "$reindeer_yurt_01_domicile_building$"
  tradeport_yurt_01_coastal_warriors_domicile_building: "$building_type_common_tradeport_01$"
  tradeport_yurt_02_coastal_warriors_domicile_building: "$building_common_tradeport_01$"
  tradeport_yurt_03_coastal_warriors_domicile_building: "$building_common_tradeport_02$"
