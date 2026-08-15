@@ -3468,7 +3468,16 @@ camel_yurt_01 = {
 			text = camel_yurt_unlock_terrain
 			any_held_county ?= {
 				any_county_province ={
-					terrain = desert
+					OR = {
+						terrain = desert
+						AND = {
+							root = { is_ai = no }
+							OR = {
+								terrain = drylands
+								terrain = oasis
+							}
+						}
+					}
 				}
 			}
 		}	
@@ -3510,7 +3519,16 @@ camel_yurt_02 = {
 			text = camel_yurt_unlock_terrain
 			any_held_county ?= {
 				any_county_province ={
-					terrain = desert
+					OR = {
+						terrain = desert
+						AND = {
+							root = { is_ai = no }
+							OR = {
+								terrain = drylands
+								terrain = oasis
+							}
+						}
+					}
 				}
 			}
 		}	
@@ -3552,7 +3570,16 @@ camel_yurt_03 = {
 			text = camel_yurt_unlock_terrain
 			any_held_county ?= {
 				any_county_province ={
-					terrain = desert
+					OR = {
+						terrain = desert
+						AND = {
+							root = { is_ai = no }
+							OR = {
+								terrain = drylands
+								terrain = oasis
+							}
+						}
+					}
 				}
 			}
 		}	
@@ -3594,7 +3621,16 @@ camel_yurt_04 = {
 			text = camel_yurt_unlock_terrain
 			any_held_county ?= {
 				any_county_province ={
-					terrain = desert
+					OR = {
+						terrain = desert
+						AND = {
+							root = { is_ai = no }
+							OR = {
+								terrain = drylands
+								terrain = oasis
+							}
+						}
+					}
 				}
 			}
 		}	
@@ -3636,7 +3672,16 @@ camel_yurt_05 = {
 			text = camel_yurt_unlock_terrain
 			any_held_county ?= {
 				any_county_province ={
-					terrain = desert
+					OR = {
+						terrain = desert
+						AND = {
+							root = { is_ai = no }
+							OR = {
+								terrain = drylands
+								terrain = oasis
+							}
+						}
+					}
 				}
 			}
 		}	
@@ -3678,7 +3723,16 @@ camel_yurt_06 = {
 			text = camel_yurt_unlock_terrain
 			any_held_county ?= {
 				any_county_province ={
-					terrain = desert
+					OR = {
+						terrain = desert
+						AND = {
+							root = { is_ai = no }
+							OR = {
+								terrain = drylands
+								terrain = oasis
+							}
+						}
+					}
 				}
 			}
 		}	
@@ -3723,6 +3777,10 @@ goat_yurt_01 = {
 					OR = {
 						terrain = mountains
 						terrain = hills
+						AND = {
+							root = { is_ai = no }
+							terrain = desert_mountains
+						}
 					}			
 				}
 			}
@@ -3768,6 +3826,10 @@ goat_yurt_02 = {
 					OR = {
 						terrain = mountains
 						terrain = hills
+						AND = {
+							root = { is_ai = no }
+							terrain = desert_mountains
+						}
 					}			
 				}
 			}
@@ -3813,6 +3875,10 @@ goat_yurt_03 = {
 					OR = {
 						terrain = mountains
 						terrain = hills
+						AND = {
+							root = { is_ai = no }
+							terrain = desert_mountains
+						}
 					}			
 				}
 			}
@@ -3858,6 +3924,10 @@ goat_yurt_04 = {
 					OR = {
 						terrain = mountains
 						terrain = hills
+						AND = {
+							root = { is_ai = no }
+							terrain = desert_mountains
+						}
 					}			
 				}
 			}
@@ -3903,6 +3973,10 @@ goat_yurt_05 = {
 					OR = {
 						terrain = mountains
 						terrain = hills
+						AND = {
+							root = { is_ai = no }
+							terrain = desert_mountains
+						}
 					}			
 				}
 			}
@@ -3948,6 +4022,10 @@ goat_yurt_06 = {
 					OR = {
 						terrain = mountains
 						terrain = hills
+						AND = {
+							root = { is_ai = no }
+							terrain = desert_mountains
+						}
 					}			
 				}
 			}
@@ -4257,6 +4335,10 @@ sheep_yurt_01 = {
 					OR = {
 						terrain = steppe
 						terrain = plains
+						AND = {
+							root = { is_ai = no }
+							terrain = farmlands
+						}
 					}			
 				}
 			}
@@ -4302,6 +4384,10 @@ sheep_yurt_02 = {
 					OR = {
 						terrain = steppe
 						terrain = plains
+						AND = {
+							root = { is_ai = no }
+							terrain = farmlands
+						}
 					}			
 				}
 			}
@@ -4347,6 +4433,10 @@ sheep_yurt_03 = {
 					OR = {
 						terrain = steppe
 						terrain = plains
+						AND = {
+							root = { is_ai = no }
+							terrain = farmlands
+						}
 					}			
 				}
 			}
@@ -4392,6 +4482,10 @@ sheep_yurt_04 = {
 					OR = {
 						terrain = steppe
 						terrain = plains
+						AND = {
+							root = { is_ai = no }
+							terrain = farmlands
+						}
 					}			
 				}
 			}
@@ -4437,6 +4531,10 @@ sheep_yurt_05 = {
 					OR = {
 						terrain = steppe
 						terrain = plains
+						AND = {
+							root = { is_ai = no }
+							terrain = farmlands
+						}
 					}			
 				}
 			}
@@ -4482,6 +4580,10 @@ sheep_yurt_06 = {
 					OR = {
 						terrain = steppe
 						terrain = plains
+						AND = {
+							root = { is_ai = no }
+							terrain = farmlands
+						}
 					}			
 				}
 			}
